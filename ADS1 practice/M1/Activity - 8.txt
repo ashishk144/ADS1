@@ -1,0 +1,9 @@
+There are 4 different techniques to solve the given problem. They are -
+Quick find
+Quick Union
+Weighted Quick Union
+Weighted Quick Union with Path Suppression
+Of all the above mentioned methods, the fourth one is the most optimal method for the following reasons -
+The complexity of this method is lg*N.
+The computation time of the program reduces drastically
+It makes the final tree as flat as possible. This reduces the time taken to check the final tree.
