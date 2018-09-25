@@ -2,7 +2,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+final public class Solution {
     /**
      * Constructs the Solution object.
      */
@@ -14,7 +14,7 @@ public class Solution {
      *
      * @param      args  The arguments
      */
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = scan.nextInt();
         Percolation percolate = new Percolation(n);
@@ -22,7 +22,7 @@ public class Solution {
         while (scan.hasNext()) {
             p = scan.nextInt();
             q = scan.nextInt();
-            percolate.open(p - 1 , q - 1);
+            percolate.open(p - 1, q - 1);
         }
         System.out.println(percolate.percolates());
     }

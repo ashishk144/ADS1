@@ -14,7 +14,7 @@ class WeightedUnion {
     }
     public int root(int p) {
         while (p != uf[p]) {
-            uf[p] = uf[uf[p]];
+            // uf[p] = uf[uf[p]];
             p = uf[p];
         }
         return p;
