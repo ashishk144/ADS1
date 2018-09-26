@@ -1,16 +1,42 @@
 import java.util.Arrays;
-
+/**
+ * Class for threesum.
+ */
 public class Threesum {
-    private long[] arr;
+    /**
+     * initiating array.
+     */
+    private int[] arr;
+    /**
+     * Keeping track of size.
+     */
     private int size;
+    /**
+     * keeping track of count.
+     */
     private int count;
-    public Threesum(int n) {
-        arr = new long[n];
+    /**
+     * Constructs the object.
+     *
+     * @param      n     { size of array }
+     */
+    public Threesum(final int n) {
+        arr = new int[n];
         size = 0;
     }
-    public void add(int k) {
+    /**
+     * Adds object to array.
+     *
+     * @param      k     { value }
+     */
+    public void add(final int k) {
         arr[size++] = k;
     }
+    /**
+     * Returns count.
+     *
+     * @return     { count }
+     */
     public int getcount() {
         // for(int i = 0; i < arr.length - 2; i++) {
         //     for (int j = i + 1; j < arr.length - 1; j++) {
@@ -24,8 +50,8 @@ public class Threesum {
         // return count;
         Arrays.sort(arr);
         for (int k = 0; k < arr.length; k++) {
-        int i = 0;
-        int j = arr.length - 1;
+            int i = 0;
+            int j = arr.length - 1;
             while (j != k && i != k && i < j) {
                 if (arr[i] + arr[j] == -arr[k]) {
                     count++;
