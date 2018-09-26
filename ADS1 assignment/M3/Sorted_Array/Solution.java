@@ -1,44 +1,20 @@
 import java.util.Scanner;
-import java.util.Arrays;
-class Sorted {
-    Sorted() {
-
-    }
-    public String concat(int[] arr1, int[] arr2) {
-        int len = arr1.length + arr2.length;
-        int[] newarray = new int[len];
-        int i = 0, j = 0;
-        while (i < len) {
-            if (j < arr1.length && j < arr2.length) {
-                if (arr1[j] < arr2[j]) {
-                    newarray[i] = arr1[j];
-                    newarray[i + 1] = arr2[j];
-                    i += 2;
-                    j++;
-                } else {
-                    newarray[i] = arr2[j];
-                    newarray[i + 1] = arr1[j];
-                    i += 2;
-                    j++;
-                }
-            } else if (j < arr1.length) {
-                newarray[i] = arr1[j];
-                i++;
-                j++;
-            } else if (j < arr2.length) {
-                newarray[i] = arr2[j];
-                i++;
-                j++;
-            }
-        }
-        return Arrays.toString(newarray).replaceAll("[\\]\\[ ]","");
-    }
-}
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
-    public static void main(String[] args) {
+    /**
+     * Main function to take inputs and print outputs.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int p = Integer.parseInt(scan.nextLine());
         int q = Integer.parseInt(scan.nextLine());
