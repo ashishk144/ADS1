@@ -7,7 +7,7 @@ class Sorted {
     public String concat(int[] arr1, int[] arr2) {
         int len = arr1.length + arr2.length;
         int[] newarray = new int[len];
-        for (int i = 0; i < len; i++) {
+        for (int i = 0; i < len - 1; i++) {
             if (arr1[i] > arr2[i]) {
                 newarray[i] = arr1[i];
                 newarray[i + 1] = arr2[i];
