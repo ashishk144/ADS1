@@ -47,11 +47,10 @@ public class Solution {
                     }
                 }
             }
-            if (ll.isEmpty()) {
+            if (flag && ll.isEmpty()) {
                 System.out.println("YES");
             } else if(flag) {
                 System.out.println("NO");
-                flag = true;
             }
             // System.out.println(ll.popHead());
             // System.out.println(ll.popTail());
