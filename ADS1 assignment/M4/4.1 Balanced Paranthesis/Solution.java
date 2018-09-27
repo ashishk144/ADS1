@@ -30,24 +30,28 @@ public class Solution {
                 } else if (line[j].equals("]")) {
                     if (ll.isEmpty() || !(ll.popHead().equals("["))) {
                         System.out.println("NO");
+                        flag = false;
                         break;
                     }
                 } else if (line[j].equals(")")) {
                     if (ll.isEmpty() || !(ll.popHead().equals("("))) {
                         System.out.println("NO");
+                        flag = false;
                         break;
                     }
                 } else if (line[j].equals("}")) {
                     if (ll.isEmpty() || !(ll.popHead().equals("{"))) {
                         System.out.println("NO");
+                        flag = false;
                         break;
                     }
                 }
             }
-            if (ll.isEmpty()) {
+            if (flag && ll.isEmpty()) {
                 System.out.println("YES");
             } else {
                 System.out.println("NO");
+                flag = true;
             }
             // System.out.println(ll.popHead());
             // System.out.println(ll.popTail());
