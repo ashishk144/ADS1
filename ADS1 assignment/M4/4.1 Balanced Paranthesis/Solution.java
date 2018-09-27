@@ -47,7 +47,7 @@ public class Solution {
                     }
                 }
             }
-            if (flag && ll.isEmpty()) {
+            if (ll.isEmpty()) {
                 System.out.println("YES");
             } else if(flag) {
                 System.out.println("NO");
