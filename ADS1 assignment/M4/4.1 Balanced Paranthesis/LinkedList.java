@@ -78,4 +78,30 @@ public class LinkedList<E> {
 	public boolean isEmpty() {
 		return size == 0;
 	}
+	public boolean closed(String[] line) {
+		LinkedList<String> ll =new LinkedList<String>();
+		for (int j = 0; j < line.length; j++) {
+                // System.out.println(line[j]);
+                if (line[j].equals("[") || line[j].equals("(") || line[j].equals("{")) {
+                    ll.add(line[j]);
+                } else if (line[j].equals("]")) {
+                    if (ll.isEmpty() || !(ll.popHead().equals("["))) {
+                        return false;
+                    }
+                } else if (line[j].equals(")")) {
+                    if (ll.isEmpty() || !(ll.popHead().equals("("))) {
+                        return false;
+                    }
+                } else if (line[j].equals("}")) {
+                    if (ll.isEmpty() || !(ll.popHead().equals("{"))) {
+                        return false;
+                    }
+                }
+            }
+            if (ll.isEmpty()) {
+            	return true;
+            } else {
+            	return false;
+            }
+	}
 }

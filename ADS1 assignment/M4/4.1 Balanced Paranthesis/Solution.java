@@ -23,39 +23,11 @@ public class Solution {
         LinkedList<String> ll = new LinkedList<String>();
         while (i < num) {
             line = scan.nextLine().split("");
-            for (int j = 0; j < line.length; j++) {
-                // System.out.println(line[j]);
-                if (line[j].equals("[") || line[j].equals("(") || line[j].equals("{")) {
-                    ll.add(line[j]);
-                } else if (line[j].equals("]")) {
-                    if (ll.isEmpty() || !(ll.popHead().equals("["))) {
-                        System.out.println("NO");
-                        flag = false;
-                        break;
-                    }
-                } else if (line[j].equals(")")) {
-                    if (ll.isEmpty() || !(ll.popHead().equals("("))) {
-                        System.out.println("NO");
-                        flag = false;
-                        break;
-                    }
-                } else if (line[j].equals("}")) {
-                    if (ll.isEmpty() || !(ll.popHead().equals("{"))) {
-                        System.out.println("NO");
-                        flag = false;
-                        break;
-                    }
-                }
-            }
-            if (flag && ll.isEmpty()) {
+            if (ll.closed(line)) {
                 System.out.println("YES");
-            } else if(flag) {
-                System.out.println("NO");
             } else {
-                flag = true;
+                System.out.println("NO");
             }
-            // System.out.println(ll.popHead());
-            // System.out.println(ll.popTail());
             i++;
         }
     }
