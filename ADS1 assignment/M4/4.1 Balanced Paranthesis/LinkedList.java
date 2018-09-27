@@ -1,13 +1,35 @@
+/**
+ * List of linkeds.
+ *
+ * @param      <E>   { Generic }
+ */
 public class LinkedList<E> {
+	/**
+	 * Class for node.
+	 */
 	private class Node {
 		E data;
 		Node next;
+		/**
+		 * Constructs the object.
+		 */
 		Node() {
 
 		}
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      data  The data
+		 */
 		Node(E data) {
 			this.data = data;
 		}
+		/**
+		 * Constructs the object.
+		 *
+		 * @param      data  The data
+		 * @param      next  The next
+		 */
 		Node(E data, Node next) {
 			this.data = data;
 			this.next = next;
@@ -17,9 +39,17 @@ public class LinkedList<E> {
 	Node head, tail;
 	E data;
 	int size = 0;
+	/**
+	 * Constructs the object.
+	 */
 	LinkedList() {
 
 	}
+	/**
+	 * adding to linked lists.
+	 *
+	 * @param      n     { parameter_description }
+	 */
 	public void add(E n) {
 		Node node = new Node(n, head);
 		if (head == null) {
@@ -29,6 +59,11 @@ public class LinkedList<E> {
 		head = node;
 		size++;
 	}
+	/**
+	 * Returns a string representation of the object.
+	 *
+	 * @return     String representation of the object.
+	 */
 	public String toString() {
 		String s = "";
 		Node thead = head;
@@ -38,6 +73,11 @@ public class LinkedList<E> {
 		} s += (thead.data);
 		return s;
 	}
+	/**
+	 * Pops head.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public E popHead() {
 		if (head != null) {
 			Node temp = head;
@@ -47,6 +87,11 @@ public class LinkedList<E> {
 		}
 		return null;
 	}
+	/**
+	 * Pops tail.
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public E popTail() {
 		Node temp = head;
 		while (temp.next != tail) {
@@ -59,25 +104,21 @@ public class LinkedList<E> {
 		return element;
 
 	}
-	// public void closed() {
-	// 	int c = 0;
-	// 	System.out.println(size);
-	// 	for (int i = 0; i < size; i++) {
-	// 		if(!(popHead().equals(popTail()))) {
-	// 			break;
-	// 		}
-	// 		c++;
-	// 		System.out.println(c);
-	// 	}
-	// 	if (c == (size - 1)/2) {
-	// 		System.out.println("YES");
-	// 	} else {
-	// 		System.out.println("NO");
-	// 	}
-	// }
+	/**
+	 * Determines if empty.
+	 *
+	 * @return     True if empty, False otherwise.
+	 */
 	public boolean isEmpty() {
 		return size == 0;
 	}
+	/**
+	 * Determines if braces are closed.
+	 *
+	 * @param      line  The line
+	 *
+	 * @return     { description_of_the_return_value }
+	 */
 	public boolean closed(String[] line) {
 		LinkedList<String> ll =new LinkedList<String>();
 		for (int j = 0; j < line.length; j++) {
