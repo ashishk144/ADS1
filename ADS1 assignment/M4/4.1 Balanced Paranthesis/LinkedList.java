@@ -42,6 +42,7 @@ public class LinkedList<E> {
 		if (head != null) {
 			Node temp = head;
 			head = head.next;
+			size--;
 			return temp.data;
 		}
 		return null;
@@ -54,6 +55,7 @@ public class LinkedList<E> {
 		E element = temp.next.data;
 		temp.next = null;
 		tail = temp;
+		size--;
 		return element;
 
 	}
@@ -73,7 +75,7 @@ public class LinkedList<E> {
 	// 		System.out.println("NO");
 	// 	}
 	// }
-	public int getsize() {
-		return size;
+	public boolean isEmpty() {
+		return size == 0;
 	}
 }
