@@ -49,7 +49,7 @@ public class Solution {
             }
             if (flag && ll.isEmpty()) {
                 System.out.println("YES");
-            } else {
+            } else if(flag) {
                 System.out.println("NO");
                 flag = true;
             }
