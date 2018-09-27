@@ -27,6 +27,15 @@ public class Solution {
             // System.out.println(Arrays.toString(line));
             for (int j = 0; j < line.length; j++) {
                 // System.out.println(line[j]);
+                if ((line.length % 2) != 0) {
+                    System.out.println("NO");
+                    break;
+                }
+                if (line[line.length - 1].equals("[") || line[line.length - 1].equals("{")
+                        || line[line.length - 1].equals("(")) {
+                    System.out.println("NO");
+                    break;
+                }
                 if (line[j].equals("[") || line[j].equals("(") || line[j].equals("{")) {
                     ll.add(line[j]);
                 } else if (line[j].equals("]")) {
