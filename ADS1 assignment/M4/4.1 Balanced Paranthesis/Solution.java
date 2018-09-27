@@ -51,6 +51,8 @@ public class Solution {
                 System.out.println("YES");
             } else if(flag) {
                 System.out.println("NO");
+            } else {
+                flag = true;
             }
             // System.out.println(ll.popHead());
             // System.out.println(ll.popTail());
