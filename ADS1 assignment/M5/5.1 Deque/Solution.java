@@ -23,9 +23,11 @@ public class Solution {
             switch (line[0]) {
             case "pushLeft":
                 l. pushLeft(Integer.parseInt(line[1]));
+                System.out.println(l);
                 break;
             case "pushRight":
                 l.pushRight(Integer.parseInt(line[1]));
+                System.out.println(l);
                 break;
             case "popLeft":
                 System.out.println(l.popLeft());

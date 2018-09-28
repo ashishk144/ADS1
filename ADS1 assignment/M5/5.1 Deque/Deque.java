@@ -9,10 +9,10 @@ public class Deque<E> {
         Node(E data) {
             this.data = data;
         }
-        Node(E data, Node n) {
+        Node(E data, Node n, Node prev) {
             this.data = data;
             this.next = n;
-            // this.previous = prev;
+            this.previous = prev;
         }
     }
     Deque() {
@@ -21,15 +21,16 @@ public class Deque<E> {
     Node head, tail;
     int size;
     public void pushLeft(E data) {
-        Node node = new Node(data, head);
+        Node node = new Node(data, head, null);
         head = node;
-        tail = head;
+        if(head == null) {
+            tail = head;
+        }
         size++;
     }
     public void pushRight(E data) {
-        Node node = new Node(data, tail);
-        head = node;
-        tail = head;
+        Node node = new Node(data, null, tail);
+        tail = node;
         size++;
     }
     public int getSize() {
@@ -57,5 +58,14 @@ public class Deque<E> {
     }
     public boolean isEmpty() {
         return size == 0;
+    }
+    public String toString() {
+        String s = "[";
+        Node thead = head;
+        while (thead.next != null) {
+            s += (thead.data) + ", ";
+            thead = thead.next;
+        } s += (thead.data) + "]";
+        return s;
     }
 }
