@@ -2,17 +2,17 @@ public class Deque<E> {
     private class Node {
         E data;
         Node next;
-        Node previous;
+        // Node previous;
         Node() {
 
         }
         Node(E data) {
             this.data = data;
         }
-        Node(E data, Node n, Node prev) {
+        Node(E data, Node n/*, Node prev*/) {
             this.data = data;
             this.next = n;
-            this.previous = prev;
+            // this.previous = prev;
         }
     }
     Deque() {
@@ -21,15 +21,25 @@ public class Deque<E> {
     Node head, tail;
     int size;
     public void pushLeft(E data) {
-        Node node = new Node(data, head, null);
-        head = node;
-        if(head == null) {
+        if (head == null) {
+            head = new Node(data);
             tail = head;
+            size++;
+            return;
         }
+        Node node = new Node(data, head);
+        head = node;
         size++;
     }
     public void pushRight(E data) {
-        Node node = new Node(data, null, tail);
+        if (head == null) {
+            head = new Node(data);
+            tail = head;
+            size++;
+            return;
+        }
+        Node node = new Node(data, null);
+        tail.next = node;
         tail = node;
         size++;
     }

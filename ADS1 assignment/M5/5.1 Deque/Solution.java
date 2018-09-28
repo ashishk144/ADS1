@@ -30,10 +30,12 @@ public class Solution {
                 System.out.println(l);
                 break;
             case "popLeft":
-                System.out.println(l.popLeft());
+                l.popLeft();
+                System.out.println(l);
                 break;
             case "popRight":
-                System.out.println(l.popRight());
+                l.popRight();
+                System.out.println(l);
                 break;
             case "size":
                 System.out.println(l.getSize());
