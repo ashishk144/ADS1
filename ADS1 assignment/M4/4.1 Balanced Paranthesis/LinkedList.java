@@ -37,7 +37,7 @@ public class LinkedList<E> {
 
 	}
 	Node head, tail;
-	E data;
+	// E data;
 	int size = 0;
 	/**
 	 * Constructs the object.
@@ -52,11 +52,8 @@ public class LinkedList<E> {
 	 */
 	public void add(E n) {
 		Node node = new Node(n, head);
-		if (head == null) {
-			head = node;
-			tail = head;
-		}
 		head = node;
+		tail = head;
 		size++;
 	}
 	/**
