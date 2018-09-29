@@ -19,7 +19,7 @@ public class LinkedList {
 
 	}
 	public void push(int data) {
-		if(head == null) {
+		if (head == null) {
 			head = new Node(data);
 			tail = head;
 			size++;
@@ -33,9 +33,17 @@ public class LinkedList {
 	public int pop() {
 		if (head != null) {
 			Node temp = head;
-			head = head.next;
-			return temp.data;
-		}	
+			if(size > 1) {
+				while (temp.next != tail) {
+					temp = temp.next;
+				}
+			}
+			int val = tail.data;
+			temp.next = null;
+			tail = temp;
+			size--;
+			return val;
+		}
 		return 0;
 	}
 	public boolean isEmpty() {
@@ -44,10 +52,13 @@ public class LinkedList {
 	public String toString() {
 		Node thead = head;
 		String s = "";
-		while (thead!= null) {
+		while (thead != null) {
 			s += thead.data;
 			thead = thead.next;
 		}
 		return s;
+	}
+	public int getSize() {
+		return size;
 	}
 }
