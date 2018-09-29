@@ -45,8 +45,8 @@ class AddLargeNumbers {
             a = list2;
             b = list1;
         }
-        while(!(b.isEmpty())) {
-            if(carry.isEmpty()) {
+        while (!(b.isEmpty())) {
+            if (carry.isEmpty()) {
                 c = a.pop() + b.pop();
             } else {
                 c = a.pop() + b.pop() + carry.pop();
@@ -61,8 +61,8 @@ class AddLargeNumbers {
                 c = 0;
             }
         }
-        if(!(carry.isEmpty())) {
-            if(a.isEmpty()) {
+        if (!(carry.isEmpty())) {
+            if (a.isEmpty()) {
                 c = carry.pop();
             } else {
                 c = a.pop() + carry.pop();
@@ -77,7 +77,7 @@ class AddLargeNumbers {
                 c = 0;
             }
         }
-        while(!(a.isEmpty())) {
+        while (!(a.isEmpty())) {
             sum.pushHead(a.pop());
         }
         return sum;
