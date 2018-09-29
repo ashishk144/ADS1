@@ -2,7 +2,17 @@ import java.util.Scanner;
 /**
  * Class for add large numbers.
  */
-class AddLargeNumbers {
+final class AddLargeNumbers {
+    /**
+     * Magic Number.
+     */
+    private static final int NINE = 9;
+    /**
+     * Constructs the object.
+     */
+    private AddLargeNumbers() {
+
+    }
     /**
      * Returns Linked list of numbers.
      *
@@ -10,10 +20,6 @@ class AddLargeNumbers {
      *
      * @return     { Linked list of numbers }
      */
-    private static final int NINE = 9;
-    private AddLargeNumbers() {
-
-    }
     public static LinkedList numberToDigits(final String number) {
         LinkedList l = new LinkedList();
         String[] numbers = number.split("");
@@ -94,7 +100,7 @@ class AddLargeNumbers {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
