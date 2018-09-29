@@ -11,6 +11,9 @@ class AddLargeNumbers {
      * @return     { Linked list of numbers }
      */
     private static final int NINE = 9;
+    private AddLargeNumbers() {
+
+    }
     public static LinkedList numberToDigits(final String number) {
         LinkedList l = new LinkedList();
         String[] numbers = number.split("");
@@ -93,13 +96,16 @@ class AddLargeNumbers {
  */
 public class Solution {
     /**
-     * Main method to take inputs and return outputs.
-     *
-     * @param      args  The arguments
+     * Constructs the object.
      */
     private Solution() {
 
     }
+    /**
+     * Main method to take inputs and return outputs.
+     *
+     * @param      args  The arguments
+     */
     public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         String input = sc.nextLine();
