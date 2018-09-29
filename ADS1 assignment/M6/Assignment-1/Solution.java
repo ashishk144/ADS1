@@ -33,32 +33,48 @@ class AddLargeNumbers {
      *
      * @return     { linkedlist of sum }
      */
-    public static LinkedList addLargeNumbers(LinkedList list1, LinkedList list2) {
+    public static LinkedList addLargeNumbers(final LinkedList list1, final LinkedList list2) {
         LinkedList sum = new LinkedList();
         LinkedList carry = new LinkedList();
-        if (list2.getSize() > list1.getSize()) {
-        LinkedList temp = new LinkedList();
-        temp = list1;
-        list1 = list2;
-        list2 = temp;
-        }
+        LinkedList a, b;
         int c = 0;
-        while(!(list2.isEmpty())) {
+        if (list1.getSize() >= list2.getSize()) {
+            a = list1;
+            b = list2;
+        } else {
+            a = list2;
+            b = list1;
+        }
+        while(!(b.isEmpty())) {
             if(carry.isEmpty()) {
-                c = list1.pop() + list2.pop();
+                c = a.pop() + b.pop();
             } else {
-                c = list1.pop() + list2.pop() + carry.pop();
+                c = a.pop() + b.pop() + carry.pop();
             }
-            if (c < 10) {
-                sum.push(c);
+            if (c > 9) {
+                String[] num = Integer.toString(c).split("");
+                sum.pushHead(Integer.parseInt(num[1]));
+                carry.pushHead(Integer.parseInt(num[1]));
+                c = 0;
             } else {
-                String[] temp = Integer.toString(c).split("");
-                sum.push(Integer.parseInt(temp[1]));
-                carry.push(Integer.parseInt(temp[0]));
+                sum.pushHead(c);
+                c = 0;
             }
         }
-        while (list1.isEmpty()) {
-            sum.push(list1.pop());
+        if(!(carry.isEmpty())) {
+            c = a.pop() + carry.pop();
+            if (c > 9) {
+                String[] num = Integer.toString(c).split("");
+                sum.pushHead(Integer.parseInt(num[1]));
+                carry.pushHead(Integer.parseInt(num[1]));
+                c = 0;
+            } else {
+                sum.pushHead(c);
+                c = 0;
+            }
+        }
+        while(!(a.isEmpty())) {
+            sum.pushHead(a.pop());
         }
         return sum;
     }

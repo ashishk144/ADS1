@@ -30,6 +30,17 @@ public class LinkedList {
 		tail = node;
 		size++;
 	}
+    public void pushHead(int data) {
+        if (head == null) {
+            head = new Node(data);
+            tail = head;
+            size++;
+            return;
+        }
+        Node node = new Node(data, head);
+        head = node;
+        size++;
+    }
 	public int pop() {
 		if (head != null) {
 			Node temp = head;
