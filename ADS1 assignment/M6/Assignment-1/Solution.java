@@ -54,7 +54,7 @@ class AddLargeNumbers {
             if (c > 9) {
                 String[] num = Integer.toString(c).split("");
                 sum.pushHead(Integer.parseInt(num[1]));
-                carry.pushHead(Integer.parseInt(num[1]));
+                carry.pushHead(Integer.parseInt(num[0]));
                 c = 0;
             } else {
                 sum.pushHead(c);
@@ -62,7 +62,11 @@ class AddLargeNumbers {
             }
         }
         if(!(carry.isEmpty())) {
-            c = a.pop() + carry.pop();
+            if(a.isEmpty()) {
+                c = carry.pop();
+            } else {
+                c = a.pop() + carry.pop();
+            }
             if (c > 9) {
                 String[] num = Integer.toString(c).split("");
                 sum.pushHead(Integer.parseInt(num[1]));
