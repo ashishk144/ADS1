@@ -53,18 +53,24 @@ public class Deque<E> {
             size--;
             return temp.data;
         }
+        System.out.println("Deck Empty");
         return null;
     }
     public E popRight() {
-        Node temp = head;
-        while (temp.next != tail) {
-            temp = temp.next;
+        if(tail != null) {
+            Node temp = head;
+            while (temp.next != tail) {
+                temp = temp.next;
+            }
+            E element = temp.next.data;
+            temp.next = null;
+            tail = temp;
+            size--;
+            return element;
+        } else {
+            System.out.println("Deck Empty");
+            return null;
         }
-        E element = temp.next.data;
-        temp.next = null;
-        tail = temp;
-        size--;
-        return element;
     }
     public boolean isEmpty() {
         return size == 0;
