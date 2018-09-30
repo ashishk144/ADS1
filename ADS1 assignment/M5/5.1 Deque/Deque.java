@@ -53,7 +53,7 @@ public class Deque<E> {
             size--;
             return temp.data;
         }
-        System.out.println("Deck is Empty");
+        System.out.println("Deck is empty");
         return null;
     }
     public E popRight() {
@@ -68,7 +68,7 @@ public class Deque<E> {
             size--;
             return element;
         } else {
-            System.out.println("Deck is Empty");
+            System.out.println("Deck is empty");
             return null;
         }
     }
