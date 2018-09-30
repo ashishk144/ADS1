@@ -22,7 +22,7 @@ public final class Solution {
             String[] line = scan.nextLine().split(" ");
             switch (line[0]) {
             case "pushLeft":
-                l. pushLeft(Integer.parseInt(line[1]));
+                l.pushLeft(Integer.parseInt(line[1]));
                 System.out.println(l);
                 break;
             case "pushRight":
