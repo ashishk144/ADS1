@@ -57,7 +57,7 @@ public class Deque<E> {
         return null;
     }
     public E popRight() {
-        if(tail != null) {
+        if (head != null) {
             Node temp = head;
             while (temp.next != tail) {
                 temp = temp.next;
@@ -76,12 +76,16 @@ public class Deque<E> {
         return size == 0;
     }
     public String toString() {
-        String s = "[";
-        Node thead = head;
-        while (thead.next != null) {
-            s += (thead.data) + ", ";
-            thead = thead.next;
-        } s += (thead.data) + "]";
-        return s;
+        if (head != null) {
+            String s = "[";
+            Node thead = head;
+            while (thead.next != null) {
+                s += (thead.data) + ", ";
+                thead = thead.next;
+            } s += (thead.data) + "]";
+            return s;
+        } else {
+            return "[]";
+        }
     }
 }
