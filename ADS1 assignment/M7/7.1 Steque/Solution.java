@@ -21,7 +21,7 @@ public class Solution {
         String line;
         for (int i = 0; i < n; i++) {
             Steque l = new Steque();
-            try {
+            // try {
                 while (!(line = scan.nextLine()).equals("")) {
                     // line = scan.nextLine();
                     // if(line.length() == 0) {
@@ -49,9 +49,9 @@ public class Solution {
                             break;
                     }
                 }
-            } catch(Exception e) {
-
-            }
+            // } catch(Exception e) {
+// 
+           // }
             System.out.println();
         }
     }
