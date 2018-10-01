@@ -59,10 +59,11 @@ public class Steque implements Iterable {
     /**
      * Adds a node to the linked list.
      *
+     * Has a complexity of 1.
      * @param      data  The data
      */
     public void push(int data) {
-        if(head == null) {
+        if (head == null) {
             head = new Node(data);
             tail = head;
             size++;
@@ -75,10 +76,11 @@ public class Steque implements Iterable {
     /**
      * Adds a node at the end of the linked list.
      *
+     *Has a complexity of 1.
      * @param      data  The data
      */
     public void enqueue(int data) {
-        if(head == null) {
+        if (head == null) {
             head = new Node(data);
             tail = head;
             size++;
@@ -92,13 +94,14 @@ public class Steque implements Iterable {
     /**
      * Removes the latest added element.
      *
+     * Has a complexity of 1.
      * @return     returns the latest added element.
      */
     public int pop() throws Exception {
-        if(size <= 1) {
-            if(size == 1) {
-            head = head.next;
-            size--;
+        if (size <= 1) {
+            if (size == 1) {
+                head = head.next;
+                size--;
             }
             throw new Exception("Steque is empty.");
         } else {
@@ -111,13 +114,14 @@ public class Steque implements Iterable {
     /**
      * Returns a string representation of the object.
      *
+     * Has a complexity of N.
      * @return     String representation of the object.
      */
     public String toString() {
         Iterator i = iterator();
-        if(size > 0) {
+        if (size > 0) {
             String s = "";
-            while(i.hasNext()) {
+            while (i.hasNext()) {
                 s += i.next() + ", ";
                 // i = i.next();
             }
@@ -127,20 +131,45 @@ public class Steque implements Iterable {
         return null;
     }
 
-
+    /**
+     * Overriding default Iterator.
+     *
+     * @return     Head.
+     */
     public Iterator iterator() {
         // System.out.println(head.data);
-        return new StequeIterator(head);}
+        return new StequeIterator(head);
+    }
 
-
+    /**
+     * Class for steque iterator.
+     */
     private class StequeIterator implements Iterator {
         Node current;
+        /**
+         * Constructs the object.
+         *
+         * @param      node  The node
+         */
         StequeIterator(Node node) {
             this.current = node;
 
         }
+        /**
+         * Determines if it has next.
+         *
+         * @return     True if has next, False otherwise.
+         */
         public boolean hasNext() { return current != null;}
+        /**
+         * Remove function unsupported.
+         */
         public void remove() {/*not supported*/}
+        /**
+         * Returns the next element.
+         *
+         * @return     Next element
+         */
         public Integer next() {
             Integer data = current.data;
             current = current.next;
