@@ -21,11 +21,11 @@ public class Solution {
         String line;
         for (int i = 0; i < n; i++) {
             Steque l = new Steque();
-            while (scan.hasNext()) {
-                line = scan.nextLine();
-                if(line.length() == 0) {
-                    break;
-                }
+            while ((line = scan.nextLine()).equals(null)) {
+                // line = scan.nextLine();
+                // if(line.length() == 0) {
+                //     break;
+                // }
                 String[] input = line.split(" ");
                 switch (input[0]) {
                     case "push":
