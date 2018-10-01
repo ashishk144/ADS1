@@ -22,7 +22,7 @@ public class Solution {
         for (int i = 0; i < n; i++) {
             Steque l = new Steque();
             try {
-                while (!(line = scan.nextLine()).equals(null)) {
+                while (!(line = scan.nextLine()).equals("")) {
                     // line = scan.nextLine();
                     // if(line.length() == 0) {
                     //     break;
@@ -50,7 +50,7 @@ public class Solution {
                     }
                 }
             } catch(Exception e) {
-                
+
             }
             System.out.println();
         }
