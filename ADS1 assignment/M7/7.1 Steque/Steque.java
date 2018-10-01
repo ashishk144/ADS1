@@ -95,14 +95,8 @@ public class Steque implements Iterable {
      * @return     returns the latest added element.
      */
     public int pop() throws Exception {
-        if(size == 0) {
+        if(size <= 1) {
             throw new Exception("Steque is empty.");
-        } else if (size == 1) {
-            Node temp = head;
-            head = head.next;
-            size--;
-            System.out.println("Steque is empty.");
-            return temp.data;
         } else {
             Node temp = head;
             head = head.next;
