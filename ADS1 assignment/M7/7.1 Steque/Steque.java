@@ -96,6 +96,12 @@ public class Steque implements Iterable {
      */
     public int pop() throws Exception {
         if(size <= 1) {
+            if(size == 1) {
+            Node temp = head;
+            head = head.next;
+            size--;
+            return temp.data;    
+            }
             throw new Exception("Steque is empty.");
         } else {
             Node temp = head;
