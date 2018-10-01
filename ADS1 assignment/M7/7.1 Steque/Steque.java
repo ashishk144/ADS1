@@ -117,13 +117,16 @@ public class Steque implements Iterable {
      */
     public String toString() {
         Iterator i = iterator();
-        String s = "";
-        while(i.hasNext()) {
-            s += i.next() + ", ";
-            // i = i.next();
+        if(size > 0) {
+            String s = "";
+            while(i.hasNext()) {
+                s += i.next() + ", ";
+                // i = i.next();
+            }
+            // System.out.println(s);
+            return s.substring(0, s.length() - 2);
         }
-        // System.out.println(s);
-        return s.substring(0, s.length() - 2);
+        return null;
     }
 
 
