@@ -19,10 +19,13 @@ public class Solution {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         String line;
-        Steque l = new Steque();
         for (int i = 0; i < n; i++) {
+            Steque l = new Steque();
             while (scan.hasNext()) {
                 line = scan.nextLine();
+                if(line.length() == 0) {
+                    break;
+                }
                 String[] input = line.split(" ");
                 switch (input[0]) {
                     case "push":
