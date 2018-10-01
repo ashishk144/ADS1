@@ -21,37 +21,33 @@ public class Solution {
         String line;
         for (int i = 0; i < n; i++) {
             Steque l = new Steque();
-            // try {
-                while (!(line = scan.nextLine()).equals("")) {
-                    // line = scan.nextLine();
-                    // if(line.length() == 0) {
-                    //     break;
-                    // }
-                    String[] input = line.split(" ");
-                    switch (input[0]) {
-                        case "push":
-                            l.push(Integer.parseInt(input[1]));
-                            System.out.println(l);
-                            break;
-                        case "pop":
-                            try {
-                                l.pop();
-                                System.out.println(l);
-                            } catch (Exception e) {
-                                System.out.println(e.getMessage());
-                            }
-                            break;
-                        case "enqueue":
-                            l.enqueue(Integer.parseInt(input[1]));
-                            System.out.println(l);
-                            break;
-                        default:
-                            break;
-                    }
+            while (scan.hasNext()) {
+                line = scan.nextLine();
+                if (line.length() == 0) {
+                    break;
                 }
-            // } catch(Exception e) {
-// 
-           // }
+                String[] input = line.split(" ");
+                switch (input[0]) {
+                case "push":
+                    l.push(Integer.parseInt(input[1]));
+                    System.out.println(l);
+                    break;
+                case "pop":
+                    try {
+                        l.pop();
+                        System.out.println(l);
+                    } catch (Exception e) {
+                        System.out.println(e.getMessage());
+                    }
+                    break;
+                case "enqueue":
+                    l.enqueue(Integer.parseInt(input[1]));
+                    System.out.println(l);
+                    break;
+                default:
+                    break;
+                }
+            }
             System.out.println();
         }
     }
