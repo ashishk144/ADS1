@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -11,9 +11,11 @@ public class Solution {
 
     }
     /**
-     * Main function to handle inputs and deliver outputs
+     * Main function to handle inputs and deliver outputs.
      *
-     * @param      args  The arguments
+     * @param      args       The arguments
+     *
+     * @throws     Exception  Steque is empty
      */
     public static void main(final String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
