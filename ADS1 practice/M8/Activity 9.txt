@@ -1,0 +1,2 @@
+Selection sort has a complexity of N^2/2 and N exchanges for a reverse order array whereas for Insertion sort the complexity is N^2/2 and the number of exchanges are N^2/2.
+So we can say that Selection sort is relatiively better than Insertion Sort.

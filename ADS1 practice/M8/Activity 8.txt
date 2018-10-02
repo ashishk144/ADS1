@@ -1,0 +1,1 @@
+Insertion sort method will be quicker in sorting the array with same elements because, it has to check only with the element adjacent to it, as opposed to the selection sort, where each element has to be compared with all the elements.
