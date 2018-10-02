@@ -22,7 +22,7 @@ public class Table {
             int min = i;
             for (int j = i; j > 0; j--) {
                 if (less(array, i, j)) {
-                    swap(array, j, min);
+                    swap(array, i, min);
                 }
             }
         }
