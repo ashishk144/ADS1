@@ -8,7 +8,7 @@ public final class Solution {
      */
     private static final int TEN = 10;
     /**
-     * Magic
+     * Magic.
      */
     private static final int THREE = 3;
     /**
