@@ -20,7 +20,7 @@ public class Table {
         int n = size;
         for (int i = 0; i < n; i++) {
             int min = i;
-            for (int j = i; j < n; j--) {
+            for (int j = i; j > 0; j--) {
                 if (less(array, i, j)) {
                     swap(array, j, min);
                 }
