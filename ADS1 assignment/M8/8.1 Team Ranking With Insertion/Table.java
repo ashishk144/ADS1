@@ -20,7 +20,7 @@ public class Table {
         int n = size;
         for (int i = 0; i < n; i++) {
             for (int j = i; j > 0; j--) {
-                if (less(array, j, j - 1)) {
+                if (more(array, j, j - 1)) {
                     swap(array, j, j - 1);
                 }
             }
@@ -35,8 +35,8 @@ public class Table {
      *
      * @return     { description_of_the_return_value }
      */
-    public boolean less(Comparable[] arr, int ind1, int ind2) {
-        return arr[ind1].compareTo(arr[ind2]) < 0;
+    public boolean more(Comparable[] arr, int ind1, int ind2) {
+        return arr[ind1].compareTo(arr[ind2]) > 0;
     }
     /**
      * Swaps the values in the array.
