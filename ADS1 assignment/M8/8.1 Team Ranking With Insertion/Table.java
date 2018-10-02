@@ -9,8 +9,8 @@ public class Table {
 
     }
     /**
-     * Selection Sort function for array.
-     * Omega(N^2)
+     * Insertion Sort function for array.
+     * Omega(N)
      * Theta(N^2)
      * O(N^2)
      * @param      array  The array
