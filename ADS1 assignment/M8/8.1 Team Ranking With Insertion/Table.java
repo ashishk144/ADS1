@@ -19,10 +19,9 @@ public class Table {
     public void Sort(Comparable[] array, int size) {
         int n = size;
         for (int i = 0; i < n; i++) {
-            int min = i;
             for (int j = i; j > 0; j--) {
-                if (less(array, i, j)) {
-                    swap(array, i, min);
+                if (less(array, j, j - 1)) {
+                    swap(array, j, j - 1);
                 }
             }
         }
