@@ -29,15 +29,15 @@ public class Team implements Comparable<Team> {
             return 1;
         } else if (this.getWins() < that.getWins()) {
             return -1;
-        } else if (this.getDraws() > that.getDraws()) {
-            return 1;
-        } else if (this.getDraws() < that.getDraws()) {
-            return -1;
         } else if (this.getLosses() < that.getLosses()) {
             return 1;
         } else if (this.getLosses() > that.getLosses()) {
             return -1;
-        } else {
+        } else if (this.getDraws() > that.getDraws()) {
+            return 1;
+        } else if (this.getDraws() < that.getDraws()) {
+            return -1;
+        }else {
             return 0;
         }
     }
