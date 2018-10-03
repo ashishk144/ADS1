@@ -4,7 +4,7 @@ public class MergeSort {
 
     }
     public void sort(Comparable[] arr) {
-        Comparable[] auxi = new Comparable[arr.length];
+        Comparable[] auxi = arr.clone();
         int low = 0;
         int high = arr.length - 1;
         sort(arr, auxi, low, high);
@@ -15,9 +15,12 @@ public class MergeSort {
             aux[i] = array[i];
             count++;
         }
-        if (count < 8) {
-            Insertion i = new Insertion();
-            i.sort(array, count);
+        if(count < 7) {
+            Insertion ins = new Insertion();
+            ins.sort(aux, count);
+            for (int i = low; i <= high; i++) {
+                array[i] = aux[i];
+            }
             return;
         }
         if (high <= low) {
@@ -26,11 +29,13 @@ public class MergeSort {
         int mid = low + (high - low) / 2;
         sort(array, aux, low, mid);
         sort(array, aux, mid + 1, high);
+        if(less(aux[mid+1],aux[mid])) {
+            System.out.println("Array is already sorted. So, skipped the call to merge...");
+            return;
+        }
         merge(array, aux, low, mid, high);
-        count = 0;
     }
     public void merge(Comparable[] array, Comparable[] aux, int lo, int mid, int hi) {
-        // System.out.println("low: " + lo + "mid: " + mid + "high: " + hi);
         int i = lo;
         int j = mid + 1;
         for (int k = lo; k <= hi; k++) {
@@ -44,7 +49,6 @@ public class MergeSort {
                 array[k] = aux[i++];
             }
         }
-        // System.out.println(Arrays.toString(array));
     }
     public void bottomUp(Comparable[] arr) {
         int n = arr.length;
@@ -57,13 +61,5 @@ public class MergeSort {
     }
     public boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
-    }
-    public boolean isSorted(Comparable[] array, int size) {
-        for (int i = 0; i < size - 1; i++) {
-            if(!(less(array[i], array[i+1]))) {
-                return false;
-            }    
-        }
-        return true;
     }
 }
