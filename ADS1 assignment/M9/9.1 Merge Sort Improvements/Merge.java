@@ -4,7 +4,7 @@ import java.util.Scanner;
  */
 class Merge {
     /**
-     * cutoff to insertion sort.
+     * Limit for insertion sort.
      */
     private final int x = 7;
     /**
@@ -12,7 +12,7 @@ class Merge {
      * Time complexity of this method is O(1).
      */
     Merge() {
-        //Unused Constructor.
+
     }
     /**
      * {Method to merge two arrays}.
@@ -40,7 +40,6 @@ class Merge {
                 aux[k] = array[i++];
             }
         }
-        // assert isSorted(aux, lo, hi);
     }
     /**
      * {Method for sorting}.
