@@ -25,8 +25,6 @@ class Merge {
      */
     public void merge(final Comparable[] array, final Comparable[] aux,
                       final int lo, final int mid, final int hi) {
-        // assert isSorted(array, lo, mid);
-        // assert isSorted(array, mid + 1, hi);
         int i = lo;
         int j = mid + 1;
         for (int k = lo; k <= hi; k++) {
@@ -77,7 +75,6 @@ class Merge {
     public void sort(final Comparable[] a) {
         Comparable[] aux = a.clone();
         sort(aux, a, 0, a.length - 1);
-        // assert isSorted(a);
     }
     /**
      * {Method for insertion sort}.
@@ -120,33 +117,5 @@ class Merge {
      */
     public boolean less(final Comparable a, final Comparable b) {
         return a.compareTo(b) < 0;
-    }
-    /**
-     * Method to determine if the array is sorted (or) not.
-     * Time complexity of this method is O(1).
-     * @param      a     {Comparable array}
-     *
-     * @return     True if sorted, False otherwise.
-     */
-    public boolean isSorted(final Comparable[] a) {
-        return isSorted(a, 0, a.length - 1);
-    }
-    /**
-     * Method to determine if the array is sorted (or) not.
-     * Time complexity of this method is O(N).
-     * @param      a     {Comparable array}
-     * @param      lo    The lower
-     * @param      hi    The higher
-     *
-     * @return     True if sorted, False otherwise.
-     */
-    public boolean isSorted(final Comparable[] a,
-                            final int lo, final int hi) {
-        for (int i = lo + 1; i <= hi; i++) {
-            if (less(a[i], a[i - 1])) {
-                return false;
-            }
-        }
-        return true;
     }
 }
