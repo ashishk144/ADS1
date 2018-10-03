@@ -1,0 +1,25 @@
+EASYQUESTION
+low: 0mid: 0high: 1
+[A, E, S, Y, Q, U, E, S, T, I, O, N]
+low: 2mid: 2high: 3
+[A, E, S, Y, Q, U, E, S, T, I, O, N]
+low: 4mid: 4high: 5
+[A, E, S, Y, Q, U, E, S, T, I, O, N]
+low: 6mid: 6high: 7
+[A, E, S, Y, Q, U, E, S, T, I, O, N]
+low: 8mid: 8high: 9
+[A, E, S, Y, Q, U, E, S, I, T, O, N]
+low: 10mid: 10high: 11
+[A, E, S, Y, Q, U, E, S, I, T, N, O]
+low: 0mid: 1high: 3
+[A, E, S, Y, Q, U, E, S, I, T, N, O]
+low: 4mid: 5high: 7
+[A, E, S, Y, E, Q, S, U, I, T, N, O]
+low: 8mid: 9high: 11
+[A, E, S, Y, E, Q, S, U, I, N, O, T]
+low: 0mid: 3high: 7
+[A, E, E, Q, S, S, U, Y, I, N, O, T]
+low: 8mid: 11high: 11
+[A, E, E, Q, S, S, U, Y, I, N, O, T]
+low: 0mid: 7high: 11
+[A, E, E, I, N, O, Q, S, S, T, U, Y]
