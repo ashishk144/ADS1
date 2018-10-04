@@ -21,7 +21,7 @@ public class LinkedList<E> {
     }
     public void insertAt(E data, int point) throws Exception {
         if (point < 0 || point > size) {
-            throw new Exception("Can't insert at this position");
+            throw new Exception("Can't insert at this position.");
         }
         Node n = new Node(data);
         head = insertAt(n, head, point, 0);
