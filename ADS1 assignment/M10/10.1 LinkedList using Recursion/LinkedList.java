@@ -44,7 +44,7 @@ public class LinkedList<E> {
     }
     public void reverse(Node current, Node previous) {
         if(current != null) {
-            reverse(current, current.next);
+            reverse(current.next, current);
             current.next = previous;
         } else {
             head = previous;
