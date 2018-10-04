@@ -30,7 +30,6 @@ public class LinkedList<E> {
         if (pos == count) {
             node.next = first;
             size += 1;
-            System.out.println(size);
             return node;
         } else {
             first.next = insertAt(node, first.next, pos, count + 1);
@@ -38,7 +37,7 @@ public class LinkedList<E> {
         }
     }
     public void reverse() throws Exception {
-        if(head == null) {
+        if(size == 0) {
             throw new Exception("No elements to reverse.");
         }
         reverse(head, null);
