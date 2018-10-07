@@ -20,12 +20,10 @@ public class Insertion {
      */
     public void sort(Comparable[] array, int low, int high) {
         System.out.println("insertionSort called");
-        if (high > low) {
-            for (int i = low; i <= high; i++) {
-                for (int j = i; j > 0; j--) {
-                    if (less(array, j, j - 1)) {
-                        swap(array, j, j - 1);
-                    }
+        for (int i = low; i <= high; i++) {
+            for (int j = i; j > 0; j--) {
+                if (less(array, j, j - 1)) {
+                    swap(array, j, j - 1);
                 }
             }
         }
