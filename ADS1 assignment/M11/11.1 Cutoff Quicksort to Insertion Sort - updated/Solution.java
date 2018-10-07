@@ -22,9 +22,14 @@ public final class Solution {
         for (int i = 0; i < n; i++) {
             QuickSort q = new QuickSort();
             int cutoff = Integer.parseInt(scan.nextLine());
-            String[] array = scan.nextLine().split(" ");
-            q.sort(array, cutoff);
-            System.out.println(Arrays.toString(array));
+            String line = scan.nextLine();
+            if(line.length() > 0) {
+                String[] array = line.split(" ");
+                q.sort(array, cutoff);
+                System.out.println(Arrays.toString(array));
+            } else {
+                System.out.println("[]");
+            }
         }
     }
 }
