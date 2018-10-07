@@ -30,7 +30,7 @@ public class QuickSort {
     public void sort(Comparable[] a, int cutoff) {
         int lo = 0;
         int hi = a.length - 1;
-        if(hi > 0) {
+        if(!a[0].equals(null)) {
             sort(a, lo, hi, cutoff);
         } else {
             return;
