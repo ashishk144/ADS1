@@ -12,7 +12,7 @@ public class MinPQ<E> {
     }
     /**
      * Determines if heap.
-     *
+     * Complexity N
      * @param      a     Array
      *
      * @return     True if heap, False otherwise.
