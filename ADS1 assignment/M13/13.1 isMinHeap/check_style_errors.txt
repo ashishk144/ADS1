@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M13\13.1 isMinHeap\Solution.java:10:22: '(' is preceded with whitespace. [MethodParamPad]
 Audit done.
-Checkstyle ends with 1 errors.
