@@ -26,7 +26,7 @@ false
 false
 false
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 true
 true
@@ -37,30 +37,32 @@ false
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayStoreException
-	at java.base/java.lang.System.arraycopy(Native Method)
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at Solution.main(Solution.java:44)
+true
+true
+true
+false
+false
+false
+true
+false
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 true
 false
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayStoreException
-	at java.base/java.lang.System.arraycopy(Native Method)
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at Solution.main(Solution.java:40)
+true
+false
+false
 ----------------------------------------
-########## Testcase 4: Failed ##########
+########## Testcase 4: Passed ##########
 Expected Output: 
 true
 true
 false
 Your Output: 
-Exception in thread "main" java.lang.ArrayStoreException
-	at java.base/java.lang.System.arraycopy(Native Method)
-	at java.base/java.util.Arrays.copyOf(Unknown Source)
-	at Solution.main(Solution.java:36)
+true
+true
+false
 ----------------------------------------
