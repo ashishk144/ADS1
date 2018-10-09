@@ -3,17 +3,50 @@
  * Class for student.
  */
 public class Student {
-    String name;
-    String dob;
-    Integer sub1;
-    Integer sub2;
-    Integer sub3;
-    Integer total;
-    String cat;
-    boolean allocation;
-    Integer day;
-    Integer month;
-    Integer year;
+    /**
+     * Variable to store name.
+     */
+    private String name;
+    /**
+     * Variable to store dob.
+     */
+    private String dob;
+    /**
+     * Variable to store sub1.
+     */
+    private Integer sub1;
+    /**
+     * Variable to store sub2.
+     */
+    private Integer sub2;
+    /**
+     * Variable to store sub3.
+     */
+    private Integer sub3;
+    /**
+     * Variable to store total.
+     */
+    private Integer total;
+    /**
+     * Variable to store category.
+     */
+    private String cat;
+    /**
+     * Variable to store allocation.
+     */    
+    private boolean allocation;
+    /**
+     * Variable to store day.
+     */
+    private Integer day;
+    /**
+     * Variable to store month.
+     */
+    private Integer month;
+    /**
+     * Variable to store year.
+     */
+    private Integer year;
     /**
      * Constructs the object.
      */
@@ -96,5 +129,29 @@ public class Student {
         } else {
             return 0;
         }
+    }
+    /**
+     * Gets the allocation.
+     *
+     * @return     The allocation.
+     */
+    public boolean getAllocation() {
+        return this.allocation;
+    }
+    /**
+     * Sets the allocation.
+     *
+     * @param      y     { parameter_description }
+     */
+    public void setAllocation(final boolean y) {
+        this.allocation = y;
+    }
+    /**
+     * Gets the cat.
+     *
+     * @return     The cat.
+     */
+    public String getCat() {
+        return this.cat;
     }
 }

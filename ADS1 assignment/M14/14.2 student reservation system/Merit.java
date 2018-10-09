@@ -16,18 +16,28 @@ public class Merit {
     public Merit() {
 
     }
+    /**
+     * Constructs the object.
+     *
+     * @param      cap   The capacity
+     */
     public Merit(final int cap) {
         array = new Student[cap];
         size = 0;
     }
     /**
      * Adds a student to the list.
-     *
+     *Complexity 1
      * @param      stu   The stu
      */
     public void add(final Student stu) {
         array[size++] = stu;
     }
+    /**
+     * Returns the merit list
+     * Complexity N
+     * @return     { description_of_the_return_value }
+     */
     public String meritlist() {
         Heap h = new Heap(array, size);
         array = h.sort();
@@ -46,40 +56,43 @@ public class Merit {
      * @param      scvac  The scvac
      * @param      stvac  The stvac
      */
-    public String allocation(int vac, int urvac, int bcvac, int scvac, int stvac) {
+    public String allocation(final int vac, final int urvac, final int bcvac, final int scvac, final int stvac) {
         int n = vac;
         int count = 0;
+        int bcres = bcvac;
+        int scres = scvac;
+        int stres = stvac;
         Student[] allocated = new Student[n];
         if (urvac > 0) {
             for (int j = 0; j < urvac; j++) {
                 allocated[count] = array[count];
-                array[count].allocation = true;
+                array[count].setAllocation(true);
                 count++;
                 n--;
             }
         }
         for (int i = count; i < size; i++) {
-            if (bcvac > 0) {
-                if (!(array[i].allocation) && array[i].cat.equals("BC")) {
+            if (bcres > 0) {
+                if (!(array[i].getAllocation()) && array[i].getCat().equals("BC")) {
                     allocated[count++] = array[i];
-                    array[i].allocation = true;
-                    bcvac--;
+                    array[i].setAllocation(true);
+                    bcres--;
                     n--;
                 }
             }
-            if (scvac > 0) {
-                if (!(array[i].allocation) && array[i].cat.equals("SC")) {
+            if (scres > 0) {
+                if (!(array[i].getAllocation()) && array[i].getCat().equals("SC")) {
                     allocated[count++] = array[i];
-                    array[i].allocation = true;
-                    scvac--;
+                    array[i].setAllocation(true);
+                    scres--;
                     n--;
                 }
             }
-            if (stvac > 0) {
-                if (!(array[i].allocation) && array[i].cat.equals("ST")) {
+            if (stres > 0) {
+                if (!(array[i].getAllocation()) && array[i].getCat().equals("ST")) {
                     allocated[count++] = array[i];
-                    array[i].allocation = true;
-                    stvac--;
+                    array[i].setAllocation(true);
+                    stres--;
                     n--;
                 }
             }
@@ -87,16 +100,15 @@ public class Merit {
         if (n > 0) {
             for (int i = 0; i < n; i++) {
                 for (int j = 0; j < size; j++) {
-                    if (!(array[j].allocation)) {
+                    if (!(array[j].getAllocation())) {
                         allocated[count++] = array[j];
-                        array[j].allocation = true;
+                        array[j].setAllocation(true);
                         break;
                     }
                 }
             }
         }
         Heap h = new Heap(allocated, count);
-        h.sort();
         String s = "";
         for (int k = 0; k < count; k++) {
             s += allocated[k].toString() + "\n";
