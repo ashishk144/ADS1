@@ -73,7 +73,8 @@ public class Merit {
         }
         for (int i = count; i < size; i++) {
             if (bcres > 0) {
-                if (!(array[i].getAllocation()) && array[i].getCat().equals("BC")) {
+                if (!(array[i].getAllocation())
+                        && array[i].getCat().equals("BC")) {
                     allocated[count++] = array[i];
                     array[i].setAllocation(true);
                     bcres--;
@@ -81,7 +82,8 @@ public class Merit {
                 }
             }
             if (scres > 0) {
-                if (!(array[i].getAllocation()) && array[i].getCat().equals("SC")) {
+                if (!(array[i].getAllocation())
+                        && array[i].getCat().equals("SC")) {
                     allocated[count++] = array[i];
                     array[i].setAllocation(true);
                     scres--;
@@ -89,7 +91,8 @@ public class Merit {
                 }
             }
             if (stres > 0) {
-                if (!(array[i].getAllocation()) && array[i].getCat().equals("ST")) {
+                if (!(array[i].getAllocation())
+                        && array[i].getCat().equals("ST")) {
                     allocated[count++] = array[i];
                     array[i].setAllocation(true);
                     stres--;

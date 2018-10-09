@@ -4,6 +4,22 @@ import java.util.Scanner;
  */
 public class Solution {
     /**
+     * THREE.
+     */
+    private static final int THREE = 3;
+    /**
+     * FOUR.
+     */
+    private static final int FOUR = 4;
+    /**
+     * FIVE.
+     */
+    private static final int FIVE = 5;
+    /**
+     * SIX.
+     */
+    private static final int SIX = 6;
+    /**
      * Constructs the object.
      */
     private Solution() {
@@ -26,8 +42,8 @@ public class Solution {
         while (scan.hasNext()) {
             String[] s = scan.nextLine().split(",");
             m.add(new Student(s[0], s[1], Integer.parseInt(s[2]
-                ), Integer.parseInt(s[3]), Integer.parseInt(s[4]
-                ), Integer.parseInt(s[5]), s[6]));
+                ), Integer.parseInt(s[THREE]), Integer.parseInt(s[FOUR]
+                ), Integer.parseInt(s[FIVE]), s[SIX]));
         }
         System.out.println(m.meritlist());
         System.out.println();
