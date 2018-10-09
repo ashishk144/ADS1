@@ -33,7 +33,7 @@ public class Student {
     private String cat;
     /**
      * Variable to store allocation.
-     */    
+     */
     private boolean allocation;
     /**
      * Variable to store day.
@@ -57,22 +57,23 @@ public class Student {
      * Constructs the object.
      *
      * @param      stu    The student
-     * @param      dob    The dob
+     * @param      date    The dob
      * @param      s1     The subject 1 marks
      * @param      s2     The subject 2 marks
      * @param      s3     The subject 3 marks
-     * @param      total  The total
-     * @param      cat    The category
+     * @param      t  The total
+     * @param      stat    The category
      */
-    public Student(final String stu, final String dob, final Integer s1,
-            final Integer s2, final Integer s3, final Integer total, final String cat) {
+    public Student(final String stu, final String date, final Integer s1,
+                   final Integer s2, final Integer s3, final Integer t,
+                   final String stat) {
         this.name = stu;
-        this.dob = dob;
+        this.dob = date;
         this.sub1 = s1;
         this.sub2 = s2;
         this.sub3 = s3;
-        this.total = total;
-        this.cat = cat;
+        this.total = t;
+        this.cat = stat;
         this.allocation = false;
         String[] birth = dob.split("-");
         this.day = Integer.parseInt(birth[0]);

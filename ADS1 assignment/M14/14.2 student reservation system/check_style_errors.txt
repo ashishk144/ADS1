@@ -1,8 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M14\14.2 student reservation system\Student.java:36: Line has trailing spaces. [RegexpSingleline]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M14\14.2 student reservation system\Student.java:67:51: 'dob' hides a field. [HiddenField]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M14\14.2 student reservation system\Student.java:68: Line is longer than 80 characters (found 88). [LineLength]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M14\14.2 student reservation system\Student.java:68:63: 'total' hides a field. [HiddenField]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M14\14.2 student reservation system\Student.java:68:83: 'cat' hides a field. [HiddenField]
 Audit done.
-Checkstyle ends with 5 errors.

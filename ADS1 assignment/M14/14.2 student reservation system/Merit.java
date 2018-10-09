@@ -109,6 +109,7 @@ public class Merit {
             }
         }
         Heap h = new Heap(allocated, count);
+        allocated = h.sort();
         String s = "";
         for (int k = 0; k < count; k++) {
             s += allocated[k].toString() + "\n";
