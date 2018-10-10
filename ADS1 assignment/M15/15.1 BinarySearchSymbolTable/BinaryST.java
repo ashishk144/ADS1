@@ -32,21 +32,17 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @param      cap   The capability
      */
-    private void resize(int cap) {
+    private void resize(final int cap) {
         keys = Arrays.copyOf(keys, cap);
         values = Arrays.copyOf(values, cap);
     }
     /**
      * Adds the key and allots to the value
-     *
+     * Complexity N
      * @param      k     { parameter_description }
      * @param      v     { parameter_description }
      */
-    public void put(Key k, Value v) {
-        // if (k == null) {
-        //     throw new Exception("Null value cannot be a key");
-        // }
-        
+    public void put(final Key k, final Value v) {
         if (v == null) {
             delete(k);
             return;
@@ -57,8 +53,8 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
             return;
         }
         for (int j = size; j > i; j--)  {
-            keys[j] = keys[j-1];
-            values[j] = values[j-1];
+            keys[j] = keys[j - 1];
+            values[j] = values[j - 1];
         }
         keys[i] = k;
         values[i] = v;
@@ -69,15 +65,12 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * Finds the rank of the given key.
-     *
+     * Complexity log N.
      * @param      key   The key
      *
      * @return     { description_of_the_return_value }
      */
-    public int getRank(Key key) {
-        // if (k == null) {
-        //     throw new Exception("Null value cannot be a key");
-        // }
+    public int getRank(final Key key) {
         int lo = 0, hi = size - 1;
         while (lo <= hi) {
             int mid = lo + (hi - lo) / 2;
@@ -92,10 +85,7 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
         }
         return lo;
     }
-    public Value get(Key a) {
-        // if(key == null) {
-        //     throw new Exception("No key found")
-        // }
+    public Value get(final Key a) {
         if (isEmpty()) {
             return null;
         }
@@ -120,7 +110,7 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     true/false
      */
-    public boolean contains(Key k) {
+    public boolean contains(final Key k) {
         return get(k) != null;
     }
     /**
@@ -130,7 +120,7 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Key getFloor(Key k) {
+    public Key getFloor(final Key k) {
         if (isEmpty()) {
             return null;
         }
@@ -145,10 +135,10 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * Deletes a given key.
-     *
+     * Complexity N
      * @param      delkey  The delkey
      */
-    public void delete(Key delkey) {
+    public void delete(final Key delkey) {
         if (isEmpty()) {
             return;
         }
@@ -177,11 +167,11 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
     }
     /**
      * Returns a string representation of the object.
-     *
+     * Complexity N.
      * @return     String representation of the object.
      */
     public String toString() {
-        String s ="";
+        String s = "";
         if (!isEmpty()) {
             for (int i = 0; i < size; i++) {
                 s += keys[i] + " " + values[i] + "\n";
