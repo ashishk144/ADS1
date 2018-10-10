@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * Constructs the object.
      */
@@ -24,29 +24,29 @@ public class Solution {
         }
         while (scan.hasNext()) {
             String[] s = scan.nextLine().split(" ");
-            switch(s[0]) {
-                case "max":
+            switch (s[0]) {
+            case "max":
                 System.out.println(b.getMax());
                 break;
-                case "floor":
+            case "floor":
                 System.out.println(b.getFloor(s[1]));
                 break;
-                case "rank":
+            case "rank":
                 System.out.println(b.getRank(s[1]));
                 break;
-                case "deleteMin":
+            case "deleteMin":
                 b.deleteMin();
                 break;
-                case "contains":
+            case "contains":
                 System.out.println(b.contains(s[1]));
                 break;
-                case "keys":
+            case "keys":
                 System.out.println(b.toString());
                 break;
-                case "get":
+            case "get":
                 System.out.println(b.get(s[1]));
                 break;
-                default:
+            default:
                 break;
             }
         }
