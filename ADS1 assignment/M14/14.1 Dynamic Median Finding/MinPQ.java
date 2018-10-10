@@ -14,7 +14,7 @@ public class MinPQ<Key> {
      *
      * @param  initCapacity the initial capacity of this priority queue
      */
-    public MinPQ(int initCapacity) {
+    public MinPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -47,7 +47,6 @@ public class MinPQ<Key> {
      * Returns a smallest key on this priority queue.
      *
      * @return a smallest key on this priority queue
-     * @throws NoSuchElementException if this priority queue is empty
      */
     public Key min() {
         return pq[1];
@@ -57,7 +56,7 @@ public class MinPQ<Key> {
      *
      * @param      capacity  The capacity
      */
-    private void resize(int capacity) {
+    private void resize(final int capacity) {
         Key[] temp = (Key[]) new Object[capacity];
         for (int i = 1; i <= n; i++) {
             temp[i] = pq[i];
@@ -70,7 +69,7 @@ public class MinPQ<Key> {
      *
      * @param  x the key to add to this priority queue
      */
-    public void insert(Key x) {
+    public void insert(final Key x) {
         if (n == pq.length - 1) {
             resize(2 * pq.length);
         }
@@ -82,7 +81,6 @@ public class MinPQ<Key> {
      * Removes and returns a smallest key on this priority queue.
      *
      * @return a smallest key on this priority queue
-     * @throws NoSuchElementException if this priority queue is empty
      */
     public Key delMin() {
         Key min = pq[1];
@@ -131,7 +129,7 @@ public class MinPQ<Key> {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean greater(int i, int j) {
+    private boolean greater(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) > 0;
         } else {
@@ -144,7 +142,7 @@ public class MinPQ<Key> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private void exch(int i, int j) {
+    private void exch(final int i, int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;

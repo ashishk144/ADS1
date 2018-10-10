@@ -14,7 +14,7 @@ public class MaxPQ<Key> {
      *
      * @param  initCapacity the initial capacity of this priority queue
      */
-    public MaxPQ(int initCapacity) {
+    public MaxPQ(final int initCapacity) {
         pq = (Key[]) new Object[initCapacity + 1];
         n = 0;
     }
@@ -49,14 +49,13 @@ public class MaxPQ<Key> {
      * Returns a largest key on this priority queue.
      *
      * @return a largest key on this priority queue
-     * @throws NoSuchElementException if this priority queue is empty
      */
     public Key max() {
         return pq[1];
     }
 
     // helper function to double the size of the heap array
-    private void resize(int capacity) {
+    private void resize(final int capacity) {
         Key[] temp = (Key[]) new Object[capacity];
         for (int i = 1; i <= n; i++) {
             temp[i] = pq[i];
@@ -82,7 +81,6 @@ public class MaxPQ<Key> {
      * Removes and returns a largest key on this priority queue.
      *
      * @return a largest key on this priority queue
-     * @throws NoSuchElementException if this priority queue is empty
      */
     public Key delMax() {
         Key max = pq[1];
@@ -133,7 +131,7 @@ public class MaxPQ<Key> {
      *
      * @return     { description_of_the_return_value }
      */
-    private boolean less(int i, int j) {
+    private boolean less(final int i, final int j) {
         if (comparator == null) {
             return ((Comparable<Key>) pq[i]).compareTo(pq[j]) < 0;
         } else {
@@ -146,7 +144,7 @@ public class MaxPQ<Key> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    private void exch(int i, int j) {
+    private void exch(final int i, final int j) {
         Key swap = pq[i];
         pq[i] = pq[j];
         pq[j] = swap;
