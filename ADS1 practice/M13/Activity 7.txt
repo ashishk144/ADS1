@@ -1,0 +1,1 @@
+An array that is sorted in ascending order is a min-oriented array, because we make sure that the parent of a min sorted array has to be the lowest, and in an ascending ordered array, we have the least value at the first.

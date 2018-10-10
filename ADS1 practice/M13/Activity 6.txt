@@ -1,0 +1,14 @@
+P R I O * R * * I * T * Y * * * Q U E * * * U * E
+R (P O I)
+R (P O I)
+P (O I)
+I (O I)
+T (O I)
+Y (O I)
+O (I)
+I
+U (Q E)
+Q (E)
+E
+U
+(E)
