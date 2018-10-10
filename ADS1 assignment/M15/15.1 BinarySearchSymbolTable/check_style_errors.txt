@@ -1,0 +1,6 @@
+Starting audit...
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:6: Class Solution should be declared as final. [FinalClass]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M15\15.1 BinarySearchSymbolTable\Solution.java:27:19: 'switch' is not followed by whitespace. [WhitespaceAround]
+Audit done.
+Checkstyle ends with 3 errors.
