@@ -130,7 +130,7 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
      *
      * @return     { description_of_the_return_value }
      */
-    public Value getFloor(Key k) {
+    public Key getFloor(Key k) {
         if (isEmpty()) {
             return null;
         }
@@ -139,9 +139,9 @@ public class BinaryST<Key extends Comparable<Key>, Value> {
             return null;
         }
         if (i < size && keys[i].compareTo(k) == 0) {
-            return values[i];
+            return keys[i];
         }
-        return values[i - 1];
+        return keys[i - 1];
     }
     /**
      * Deletes a given key.
