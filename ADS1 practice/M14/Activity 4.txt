@@ -1,0 +1,1 @@
+I prefer an unoredered array, because the complexity of inserting an element in an unordered array is 1. Since the removing of max happens only a few times, it is better to use an unordered array.
