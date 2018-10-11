@@ -5,10 +5,9 @@ import java.util.Comparator;
  * @param      <Key>  The key
  */
 public class MinPQ<Key> {
-    private Key[] pq;                    // store items at indices 1 to n
-    private int n;                       // number of items on priority queue
-    private Comparator<Key> comparator;  // optional comparator
-
+    private Key[] pq;
+    private int n;
+    private Comparator<Key> comparator;
     /**
      * Initializes an empty priority queue with the given initial capacity.
      *
@@ -53,7 +52,7 @@ public class MinPQ<Key> {
     }
     /**
      * Resizing function.
-     *
+     * Complexity N.
      * @param      capacity  The capacity
      */
     private void resize(final int capacity) {
@@ -94,7 +93,7 @@ public class MinPQ<Key> {
     }
     /**
     * Swim function.
-    *
+    * Complexity logN.
     * @param      k     { parameter_description }
     */
     private void swim(int k) {
@@ -105,7 +104,7 @@ public class MinPQ<Key> {
     }
     /**
      * Sink function.
-     *
+     * Complexity logN.
      * @param      k     { parameter_description }
      */
     private void sink(int k) {

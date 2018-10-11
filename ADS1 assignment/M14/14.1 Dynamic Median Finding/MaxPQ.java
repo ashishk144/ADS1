@@ -53,8 +53,11 @@ public class MaxPQ<Key> {
     public Key max() {
         return pq[1];
     }
-
-    // helper function to double the size of the heap array
+    /**
+     * Resizes the arrays with given capacity.
+     * Complexity N.
+     * @param      capacity  The capacity
+     */
     private void resize(final int capacity) {
         Key[] temp = (Key[]) new Object[capacity];
         for (int i = 1; i <= n; i++) {
@@ -86,7 +89,7 @@ public class MaxPQ<Key> {
         Key max = pq[1];
         exch(1, n--);
         sink(1);
-        pq[n + 1] = null;   // to avoid loiterig and help with garbage collection
+        pq[n + 1] = null;
         if ((n > 0) && (n == (pq.length - 1) / 4)) {
             resize(pq.length / 2);
         }
@@ -95,7 +98,7 @@ public class MaxPQ<Key> {
 
     /**
     * Swim function.
-    *
+    * Complexity log N.
     * @param      k     { parameter_description }
     */
     private void swim(int k) {
@@ -106,7 +109,7 @@ public class MaxPQ<Key> {
     }
     /**
      * Sink function.
-     *
+     * Complexity logN.
      * @param      k     { parameter_description }
      */
     private void sink(int k) {
