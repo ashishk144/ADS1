@@ -1,0 +1,1 @@
+Sequential symbol table implementation is best for this case problem as there are 10^6 put() operations and 10^3 get() operations. The sequential symbol table has a lower time complexity for put() operation.
