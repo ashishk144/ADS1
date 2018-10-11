@@ -133,7 +133,6 @@ final class Solution {
             if (obj.getMinSize()  == obj.getMaxSize()) {
                 double min = obj.getMin();
                 double max = obj.getMax();
-                System.out.println(min + " " + max);
                 median = (min + max) / 2.0;
                 System.out.println(median);
             }
