@@ -7,11 +7,11 @@ public final class Solution {
     /**
      * Magic Number.
      */
-    private final static int THREE = 3;
+    private static final int THREE = 3;
     /**
      * Magic Number.
      */
-    private final static int FOUR = 4;
+    private static final int FOUR = 4;
     /**
      * Constructs the object.
      */

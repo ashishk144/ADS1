@@ -1,5 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:10:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:14:19: 'static' modifier out of order with the JLS suggestions. [ModifierOrder]
 Audit done.
-Checkstyle ends with 2 errors.
