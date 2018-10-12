@@ -5,6 +5,14 @@ import java.util.Scanner;
  */
 public final class Solution {
     /**
+     * Magic Number.
+     */
+    private final static int THREE = 3;
+    /**
+     * Magic Number.
+     */
+    private final static int FOUR = 4;
+    /**
      * Constructs the object.
      */
     private Solution() {
@@ -20,14 +28,14 @@ public final class Solution {
         Bst<Book, Integer> b = new Bst();
         while (scan.hasNext()) {
             String[] inp = scan.nextLine().split(",");
-            switch(inp[0]) {
+            switch (inp[0]) {
                 case "put":
                     b.put(new Book(inp[1], inp[2], Double.parseDouble(
-                        inp[3])), Integer.parseInt(inp[4]));
+                        inp[THREE])), Integer.parseInt(inp[FOUR]));
                     break;
                 case "get":
-                    System.out.println(b.get(new Book(inp[1], inp[2], Double.parseDouble(
-                        inp[3]))));
+                    System.out.println(b.get(new Book(inp[1], inp[2],
+                        Double.parseDouble(inp[THREE]))));
                     break;
                 default:
                     break;
