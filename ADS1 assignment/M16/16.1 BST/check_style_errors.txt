@@ -1,0 +1,9 @@
+Starting audit...
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:23:19: 'switch' is not followed by whitespace. [WhitespaceAround]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:26:29: '3' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:26:56: '4' is a magic number. [MagicNumber]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:29: Line is longer than 80 characters (found 89). [LineLength]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M16\16.1 BST\Solution.java:30:29: '3' is a magic number. [MagicNumber]
+Audit done.
+Checkstyle ends with 6 errors.
