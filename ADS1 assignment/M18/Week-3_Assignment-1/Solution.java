@@ -1,5 +1,8 @@
 import java.util.Scanner;
 import java.util.Arrays;
+/**
+ * Class for order pq.
+ */
 class OrderPQ {
     /**
      *the object to access of minheap.
@@ -68,7 +71,7 @@ class OrderPQ {
 /**
  * Class for solution.
  */
-public class Solution {
+public final class Solution {
     /**
      * MAGIC.
      */
