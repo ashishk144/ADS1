@@ -70,6 +70,14 @@ class OrderPQ {
  */
 public class Solution {
     /**
+     * MAGIC.
+     */
+    private static final int FIVE = 5;
+    /**
+     * MAGIC
+     */
+    private static final int SIX = 6;
+    /**
      * Constructs the object.
      */
     private Solution() {
@@ -86,17 +94,17 @@ public class Solution {
         BinarySearchST<String, Integer> best = new BinarySearchST();
         BinarySearchST<String, Integer> worst = new BinarySearchST();
         Stock stock;
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < SIX; i++) {
             OrderPQ obj = new OrderPQ();
             int j = 0;
             while (j < n) {
-            String[] line = scan.nextLine().split(",");
-            Stock st = new Stock(line[0], Double.parseDouble(line[1]));
-            obj.insertAtMin(st);
-            obj.insertAtMax(st);
-            j++;
+                String[] line = scan.nextLine().split(",");
+                Stock st = new Stock(line[0], Double.parseDouble(line[1]));
+                obj.insertAtMin(st);
+                obj.insertAtMax(st);
+                j++;
             }
-            for (int k = 0; k < 5; k++) {
+            for (int k = 0; k < FIVE; k++) {
                 stock = obj.delMax();
                 if (best.contains(stock.getName())) {
                     best.put(stock.getName(), best.get(stock.getName()) + 1);
@@ -106,7 +114,7 @@ public class Solution {
                 System.out.println(stock);
             }
             System.out.println();
-            for (int l = 0; l < 5; l++) {
+            for (int l = 0; l < FIVE; l++) {
                 stock = obj.delMin();
                 if (worst.contains(stock.getName())) {
                     worst.put(stock.getName(), worst.get(stock.getName()) + 1);
@@ -120,39 +128,39 @@ public class Solution {
         int m = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < m; i++) {
             String[] inp = scan.nextLine().split(",");
-            switch(inp[0]) {
-                case "get":
-                    switch(inp[1]) {
-                        case "minST":
-                        if(worst.contains(inp[2])) {
-                            System.out.println(worst.get(inp[2]));
-                        } else {
-                            System.out.println("0");
-                        }
-                        break;
-                        case "maxST":
-                        if(best.contains(inp[2])) {
-                            System.out.println(best.get(inp[2]));
-                        } else {
-                            System.out.println("0");
-                        }
-                        break;
+            switch (inp[0]) {
+            case "get":
+                switch (inp[1]) {
+                case "minST":
+                    if (worst.contains(inp[2])) {
+                        System.out.println(worst.get(inp[2]));
+                    } else {
+                        System.out.println("0");
                     }
+                    break;
+                case "maxST":
+                    if (best.contains(inp[2])) {
+                        System.out.println(best.get(inp[2]));
+                    } else {
+                        System.out.println("0");
+                    }
+                    break;
+                }
                 break;
-                case "intersection":
+            case "intersection":
                 Object[] key = best.getKeys();
                 String str = "";
                 for (int l = 0; l < key.length; l++) {
-                    if(key[l] != null) {
+                    if (key[l] != null) {
                         str = (String) key[l];
                     }
-                    if(worst.contains(str) && !(str.equals(""))) {
+                    if (worst.contains(str) && !(str.equals(""))) {
                         System.out.println(str);
-                        str ="";
+                        str = "";
                     }
                 }
                 break;
-                default:
+            default:
                 break;
             }
         }

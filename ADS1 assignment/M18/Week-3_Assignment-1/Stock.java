@@ -16,7 +16,7 @@ public class Stock implements Comparable<Stock> {
      * @param      name  The name
      * @param      c     { parameter_description }
      */
-    public Stock(String name, Double c) {
+    public Stock(final String name, final Double c) {
         this.stock = name;
         this.change = c;
     }

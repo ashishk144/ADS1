@@ -1,6 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:19:18: Parameter name should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:19:31: Parameter c should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 3 errors.
