@@ -65,12 +65,22 @@ class OrderPQ {
         return min.delMin();
     }
 }
-
+/**
+ * Class for solution.
+ */
 public class Solution {
+    /**
+     * Constructs the object.
+     */
     private Solution() {
 
     }
-    public static void main(String[] args) {
+    /**
+     * Main function to handle inputs and deliver outputs.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
         BinarySearchST<String, Integer> best = new BinarySearchST();

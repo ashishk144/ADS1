@@ -1,22 +1,6 @@
 Starting audit...
 [ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:1: Missing a Javadoc comment. [JavadocType]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:2:1: File contains tab characters (this is the first instance). [FileTabCharacter]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:2:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:3:9: Missing a Javadoc comment. [JavadocVariable]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:4:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:4:22: Parameter name should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:4:35: Parameter c should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:8:9: Class 'Stock' looks like designed for extension (can be subclassed), but the method 'getName' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Stock' final or making the method 'getName' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:8:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:11:9: Class 'Stock' looks like designed for extension (can be subclassed), but the method 'getChange' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Stock' final or making the method 'getChange' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:11:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:14:9: Class 'Stock' looks like designed for extension (can be subclassed), but the method 'compareTo' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Stock' final or making the method 'compareTo' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:14:9: Missing a Javadoc comment. [JavadocMethod]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:14:30: Parameter k should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:15:19: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:17:26: 'if' is not followed by whitespace. [WhitespaceAfter]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:23:9: Class 'Stock' looks like designed for extension (can be subclassed), but the method 'toString' does not have javadoc that explains how to do that safely. If class is not designed for extension consider making the class 'Stock' final or making the method 'toString' static/final/abstract/empty, or adding allowed annotation for the method. [DesignForExtension]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:23:9: Missing a Javadoc comment. [JavadocMethod]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:19:18: Parameter name should be final. [FinalParameters]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M18\Week-3_Assignment-1\Stock.java:19:31: Parameter c should be final. [FinalParameters]
 Audit done.
-Checkstyle ends with 19 errors.
+Checkstyle ends with 3 errors.
