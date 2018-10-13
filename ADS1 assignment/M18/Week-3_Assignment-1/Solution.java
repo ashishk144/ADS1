@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Arrays;
 class OrderPQ {
     /**
      *the object to access of minheap.
@@ -129,7 +129,18 @@ public class Solution {
                         break;
                     }
                 break;
-                case "instersection":
+                case "intersection":
+                Object[] key = best.getKeys();
+                String str = "";
+                for (int l = 0; l < key.length; l++) {
+                    if(key[l] != null) {
+                        str = (String) key[l];
+                    }
+                    if(worst.contains(str) && !(str.equals(""))) {
+                        System.out.println(str);
+                        str ="";
+                    }
+                }
                 break;
                 default:
                 break;

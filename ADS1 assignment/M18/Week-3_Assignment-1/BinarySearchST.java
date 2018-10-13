@@ -182,69 +182,7 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (n > 0 && n == keys.length / 4) resize(keys.length / 2);
 
     }
-
-    /**
-     * Removes the smallest key and associated value from this symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
-     */
-    public void deleteMin() {
-        if (isEmpty()) throw new NoSuchElementException("Symbol table underflow error");
-        delete(min());
-    }
-
-    /**
-     * Removes the largest key and associated value from this symbol table.
-     *
-     * @throws NoSuchElementException if the symbol table is empty
-     */
-    public void deleteMax() {
-        if (isEmpty()) throw new NoSuchElementException("Symbol table underflow error");
-        delete(max());
-    }
-
-
-    /***************************************************************************
-     *  Ordered symbol table methods.
-     ***************************************************************************/
-
-    /**
-      * Returns the smallest key in this symbol table.
-      *
-      * @return the smallest key in this symbol table
-      * @throws NoSuchElementException if this symbol table is empty
-      */
-    public Key min() {
-        if (isEmpty()) throw new NoSuchElementException("called min() with empty symbol table");
-        return keys[0];
-    }
-
-    /**
-     * Returns the largest key in this symbol table.
-     *
-     * @return the largest key in this symbol table
-     * @throws NoSuchElementException if this symbol table is empty
-     */
-    public Key max() {
-        if (isEmpty()) throw new NoSuchElementException("called max() with empty symbol table");
-        return keys[n - 1];
-    }
-    /**
-     * Returns the number of keys in this symbol table in the specified range.
-     *
-     * @param lo minimum endpoint
-     * @param hi maximum endpoint
-     * @return the number of keys in this symbol table between {@code lo}
-     *         (inclusive) and {@code hi} (inclusive)
-     * @throws IllegalArgumentException if either {@code lo} or {@code hi}
-     *         is {@code null}
-     */
-    public int size(Key lo, Key hi) {
-        if (lo == null) throw new IllegalArgumentException("first argument to size() is null");
-        if (hi == null) throw new IllegalArgumentException("second argument to size() is null");
-
-        if (lo.compareTo(hi) > 0) return 0;
-        if (contains(hi)) return rank(hi) - rank(lo) + 1;
-        else              return rank(hi) - rank(lo);
+    public Key[] getKeys() {
+        return this.keys;
     }
 }
