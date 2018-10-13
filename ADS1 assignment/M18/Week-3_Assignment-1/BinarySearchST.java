@@ -229,53 +229,6 @@ public class BinarySearchST<Key extends Comparable<Key>, Value> {
         if (isEmpty()) throw new NoSuchElementException("called max() with empty symbol table");
         return keys[n - 1];
     }
-
-    /**
-     * Return the kth smallest key in this symbol table.
-     *
-     * @param  k the order statistic
-     * @return the {@code k}th smallest key in this symbol table
-     * @throws IllegalArgumentException unless {@code k} is between 0 and
-     *        <em>n</em>–1
-     */
-    public Key select(int k) {
-        if (k < 0 || k >= size()) {
-            throw new IllegalArgumentException("called select() with invalid argument: " + k);
-        }
-        return keys[k];
-    }
-
-    /**
-     * Returns the largest key in this symbol table less than or equal to {@code key}.
-     *
-     * @param  key the key
-     * @return the largest key in this symbol table less than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public Key floor(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to floor() is null");
-        int i = rank(key);
-        if (i < n && key.compareTo(keys[i]) == 0) return keys[i];
-        if (i == 0) return null;
-        else return keys[i - 1];
-    }
-
-    /**
-     * Returns the smallest key in this symbol table greater than or equal to {@code key}.
-     *
-     * @param  key the key
-     * @return the smallest key in this symbol table greater than or equal to {@code key}
-     * @throws NoSuchElementException if there is no such key
-     * @throws IllegalArgumentException if {@code key} is {@code null}
-     */
-    public Key ceiling(Key key) {
-        if (key == null) throw new IllegalArgumentException("argument to ceiling() is null");
-        int i = rank(key);
-        if (i == n) return null;
-        else return keys[i];
-    }
-
     /**
      * Returns the number of keys in this symbol table in the specified range.
      *

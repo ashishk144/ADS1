@@ -177,19 +177,4 @@ public class MaxPQ<Key> {
         pq[i] = pq[j];
         pq[j] = swap;
     }
-
-    // is pq[1..N] a max heap?
-    private boolean isMaxHeap() {
-        return isMaxHeap(1);
-    }
-
-    // is subtree of pq[1..n] rooted at k a max heap?
-    private boolean isMaxHeap(int k) {
-        if (k > n) return true;
-        int left = 2*k;
-        int right = 2*k + 1;
-        if (left  <= n && less(k, left))  return false;
-        if (right <= n && less(k, right)) return false;
-        return isMaxHeap(left) && isMaxHeap(right);
-    }
 }

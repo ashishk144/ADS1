@@ -64,22 +64,6 @@ class OrderPQ {
     public Stock delMin() {
         return min.delMin();
     }
-    /**
-     *gets the size of minheap.
-     *
-     * @return     The minimum size.
-     */
-    public int getMinSize() {
-        return min.size();
-    }
-    /**
-     * Gets the maximum size of maxheap.
-     *
-     * @return     The maximum size.
-     */
-    public int getMaxSize() {
-        return max.size();
-    }
 }
 
 public class Solution {
@@ -89,8 +73,8 @@ public class Solution {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        BinarySearchST<Stock, Integer> best = new BinarySearchST();
-        BinarySearchST<Stock, Integer> worst = new BinarySearchST();
+        BinarySearchST<String, Integer> best = new BinarySearchST();
+        BinarySearchST<String, Integer> worst = new BinarySearchST();
         Stock stock;
         for (int i = 0; i < 6; i++) {
             OrderPQ obj = new OrderPQ();
@@ -104,14 +88,52 @@ public class Solution {
             }
             for (int k = 0; k < 5; k++) {
                 stock = obj.delMax();
+                if (best.contains(stock.getName())) {
+                    best.put(stock.getName(), best.get(stock.getName()) + 1);
+                } else {
+                    best.put(stock.getName(), 1);
+                }
                 System.out.println(stock);
             }
             System.out.println();
             for (int l = 0; l < 5; l++) {
                 stock = obj.delMin();
+                if (worst.contains(stock.getName())) {
+                    worst.put(stock.getName(), worst.get(stock.getName()) + 1);
+                } else {
+                    worst.put(stock.getName(), 1);
+                }
                 System.out.println(stock);
             }
             System.out.println();
+        }
+        int m = Integer.parseInt(scan.nextLine());
+        for (int i = 0; i < m; i++) {
+            String[] inp = scan.nextLine().split(",");
+            switch(inp[0]) {
+                case "get":
+                    switch(inp[1]) {
+                        case "minST":
+                        if(worst.contains(inp[2])) {
+                            System.out.println(worst.get(inp[2]));
+                        } else {
+                            System.out.println("0");
+                        }
+                        break;
+                        case "maxST":
+                        if(best.contains(inp[2])) {
+                            System.out.println(best.get(inp[2]));
+                        } else {
+                            System.out.println("0");
+                        }
+                        break;
+                    }
+                break;
+                case "instersection":
+                break;
+                default:
+                break;
+            }
         }
     }
 }
