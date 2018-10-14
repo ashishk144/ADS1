@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:37:33: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 1 errors.

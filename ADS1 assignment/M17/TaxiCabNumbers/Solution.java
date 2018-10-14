@@ -34,7 +34,7 @@ class TaxiCab implements Comparable<TaxiCab> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(final TaxiCab that) {
-        if (this.sum < that.sum){
+        if (this.sum < that.sum) {
             return -1;
         }
         if (this.sum > that.sum) {
