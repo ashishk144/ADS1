@@ -1,11 +1,8 @@
-import java.util.Scanner;
-/**
- * Class for taxi cab.
- */
+import java.util.*;
 class TaxiCab implements Comparable<TaxiCab> {
-    long sum;
-    long i;
-    long j;
+    private long sum;
+    private long i;
+    private long j;
     /**
      * Constructs the object.
      *
@@ -18,7 +15,7 @@ class TaxiCab implements Comparable<TaxiCab> {
         this.j = j;
     }
     /**
-     * Compares 2 objects and returns the value.
+     * Compares the values.
      *
      * @param      that  The that
      *
@@ -29,23 +26,59 @@ class TaxiCab implements Comparable<TaxiCab> {
         if (this.sum > that.sum) return +1;
         return 0;
     }
-    public long sum() {return sum;}
+    /**
+     * Gets the sum.
+     *
+     * @return     The sum.
+     */
+    public long getSum() {
+        return sum;
+    }
+    /**
+     * Gets i.
+     *
+     * @return     I.
+     */
+    public long getI() {
+        return this.i;
+    }
+    /**
+     * Gets the j.
+     *
+     * @return     The j.
+     */
+    public long getJ() {
+        return this.j;
+    }
+    /**
+     * Sets i.
+     *
+     * @param      k     { parameter_description }
+     */
+    public void setI(final int k) {
+        this.i = k;
+    }
+    /**
+     * Sets the j.
+     *
+     * @param      l     { parameter_description }
+     */
+    public void setJ(final int l) {
+        this.j = l;
+    }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
     public String toString() {
         return sum + " = " + i + "^3" + " + " + j + "^3";
     }
 
 }
 
-/**
- * Class for solution.
- */
-public class Solution {
-	/**
-	 * Constructs the object.
-	 */
-	private Solution() {
 
-	}
+public class Solution {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
@@ -60,10 +93,10 @@ public class Solution {
         int k = 0;
         while (true) {
             TaxiCab c = pq.delMin();
-            if (prev.sum() == c.sum()) {
+            if (prev.getSum() == c.getSum()) {
                 p++;
                 if (p == m) {
-                    sum = c.sum();
+                    sum = c.getSum();
                     if (++k == n) { 
                         break;
                     }
@@ -72,8 +105,8 @@ public class Solution {
                 p = 1;
             }
             prev = c;
-            if (c.j < 1500) {
-                pq.insert(new TaxiCab(c.i, c.j + 1));
+            if (c.getJ() < 1500) {
+                pq.insert(new TaxiCab(c.getI(), c.getJ() + 1));
             }
         }
         System.out.println(sum);
