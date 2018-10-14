@@ -18,13 +18,13 @@ class TaxiCab implements Comparable<TaxiCab> {
     /**
      * Constructs the object.
      *
-     * @param      i     { parameter_description }
-     * @param      j     { parameter_description }
+     * @param      k     { parameter_description }
+     * @param      l     { parameter_description }
      */
-    public TaxiCab(final long i, final long j) {
-        this.sum = i * i * i + j * j * j;
-        this.i = i;
-        this.j = j;
+    TaxiCab(final long k, final long l) {
+        this.sum = k * k * k + l * l * l;
+        this.i = k;
+        this.j = l;
     }
     /**
      * Compares the values.
@@ -33,9 +33,13 @@ class TaxiCab implements Comparable<TaxiCab> {
      *
      * @return     { description_of_the_return_value }
      */
-    public int compareTo(TaxiCab that) {
-        if (this.sum < that.sum) return -1;
-        if (this.sum > that.sum) return +1;
+    public int compareTo(final TaxiCab that) {
+        if (this.sum < that.sum){
+            return -1;
+        }
+        if (this.sum > that.sum) {
+            return +1;
+        }
         return 0;
     }
     /**

@@ -1,10 +1,4 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:0: File does not end with a newline. [NewlineAtEndOfFile]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:24:5: Redundant 'public' modifier. [RedundantModifier]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:24:31: 'i' hides a field. [HiddenField]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:24:45: 'j' hides a field. [HiddenField]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:36:26: Parameter that should be final. [FinalParameters]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:37: 'if' construct must use '{}'s. [NeedBraces]
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:38: 'if' construct must use '{}'s. [NeedBraces]
+[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M17\TaxiCabNumbers\Solution.java:37:33: '{' is not preceded with whitespace. [WhitespaceAround]
 Audit done.
-Checkstyle ends with 7 errors.
+Checkstyle ends with 1 errors.
