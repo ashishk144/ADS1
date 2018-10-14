@@ -5,8 +5,17 @@ import java.util.Comparator;
  * @param      <Key>  The key
  */
 public class MinPQ<Key> {
+    /**
+     * Priority QUEUE.
+     */
     private Key[] pq;
+    /**
+     * Size.
+     */
     private int n;
+    /**
+     * Comparator.
+     */
     private Comparator<Key> comparator;
     /**
      * Initializes an empty priority queue with the given initial capacity.
