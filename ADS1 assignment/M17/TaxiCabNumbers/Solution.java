@@ -1,7 +1,19 @@
-import java.util.*;
+import java.util.Scanner;
+/**
+ * Class for taxi cab.
+ */
 class TaxiCab implements Comparable<TaxiCab> {
+    /**
+     * Sum.
+     */
     private long sum;
+    /**
+     * i value.
+     */
     private long i;
+    /**
+     * j value.
+     */
     private long j;
     /**
      * Constructs the object.
@@ -9,7 +21,7 @@ class TaxiCab implements Comparable<TaxiCab> {
      * @param      i     { parameter_description }
      * @param      j     { parameter_description }
      */
-    public TaxiCab(long i, long j) {
+    public TaxiCab(final long i, final long j) {
         this.sum = i * i * i + j * j * j;
         this.i = i;
         this.j = j;
@@ -51,22 +63,6 @@ class TaxiCab implements Comparable<TaxiCab> {
         return this.j;
     }
     /**
-     * Sets i.
-     *
-     * @param      k     { parameter_description }
-     */
-    public void setI(final int k) {
-        this.i = k;
-    }
-    /**
-     * Sets the j.
-     *
-     * @param      l     { parameter_description }
-     */
-    public void setJ(final int l) {
-        this.j = l;
-    }
-    /**
      * Returns a string representation of the object.
      *
      * @return     String representation of the object.
@@ -77,14 +73,35 @@ class TaxiCab implements Comparable<TaxiCab> {
 
 }
 
+/**
+ * Class for solution.
+ */
+public final class Solution {
+    /**
+     * THOUSAND.
+     */
+    private static final int THOUSAND = 1000;
+    /**
+     * FIFTEEN HUNDRED.
+     */
+    private static final int FIFHUN = 1500;
+    /**
+     * Constructs the object.
+     */
+    private Solution() {
 
-public class Solution {
-    public static void main(String[] args) {
+    }
+    /**
+     * Main function to handle inputs and deliver outputs.
+     *
+     * @param      args  The arguments
+     */
+    public static void main(final String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m = sc.nextInt();
         MinPQ<TaxiCab> pq = new MinPQ<TaxiCab>();
-        for (int i = 1; i <= 1000; i++) {
+        for (int i = 1; i <= THOUSAND; i++) {
             pq.insert(new TaxiCab(i, i));
         }
         TaxiCab prev = new TaxiCab(0, 0);
@@ -97,7 +114,7 @@ public class Solution {
                 p++;
                 if (p == m) {
                     sum = c.getSum();
-                    if (++k == n) { 
+                    if (++k == n) {
                         break;
                     }
                 }
@@ -105,11 +122,10 @@ public class Solution {
                 p = 1;
             }
             prev = c;
-            if (c.getJ() < 1500) {
+            if (c.getJ() < FIFHUN) {
                 pq.insert(new TaxiCab(c.getI(), c.getJ() + 1));
             }
         }
         System.out.println(sum);
-
     }
 }
