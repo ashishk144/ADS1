@@ -1,0 +1,2 @@
+The sequence b breaks at 3, so sequence b is not possible.
+The sequence d breaks at 8, so sequence d is not possible.
