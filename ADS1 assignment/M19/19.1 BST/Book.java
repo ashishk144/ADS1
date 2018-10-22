@@ -37,4 +37,14 @@ public class Book implements Comparable<Book> {
     public int compareTo(final Book b) {
         return this.price.compareTo(b.price);
     }
+    /**
+     * Returns a string representation of the object.
+     *
+     * @return     String representation of the object.
+     */
+    public String toString() {
+        String s = "";
+        s += this.name + ", " + this.author + ", " + this.price;
+        return s;
+    }
 }
