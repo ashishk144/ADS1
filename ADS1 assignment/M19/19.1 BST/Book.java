@@ -35,7 +35,7 @@ public class Book implements Comparable<Book> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(final Book b) {
-        return this.price.compareTo(b.price);
+        return this.name.compareTo(b.name);
     }
     /**
      * Returns a string representation of the object.
