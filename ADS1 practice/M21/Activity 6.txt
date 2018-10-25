@@ -1,0 +1,1 @@
+Only 3 and 4 red black trees are possible as they have equal number of Black links from root to the leaf.
