@@ -1,0 +1,1 @@
+Yes the implementation of the hashCode function is legal, but it is not satisfactory because all the keys enter the same value of the array and the point of creation of hash function becomes useless.
