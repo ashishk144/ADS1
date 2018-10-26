@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.util.Arrays;
+
 /**
  * Class for Solution.
  */
@@ -25,9 +27,9 @@ public final class Solution {
         String[] note = scan.nextLine().split(" ");
         for (int i = 0; i < magazine.length; i++) {
             if (mag.contains(magazine[i])) {
-                mag.put(magazine[i], 1);
-            } else {
                 mag.put(magazine[i], mag.get(magazine[i]) + 1);
+            } else {
+                mag.put(magazine[i], 1);
             }
         }
         for (int i = 0; i < note.length; i++) {
