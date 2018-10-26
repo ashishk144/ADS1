@@ -27,7 +27,7 @@ public final class Solution {
                   Integer.parseInt(tokens[2]));
         break;
       case "get":
-        System.out.println(linearprobe.get(tokens[0]));
+        System.out.println(linearprobe.get(tokens[1]));
         break;
       case "delete":
         linearprobe.delete(tokens[1]);
