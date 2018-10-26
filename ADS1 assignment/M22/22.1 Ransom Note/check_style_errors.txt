@@ -1,4 +1,2 @@
 Starting audit...
-[ERROR] D:\MSIT\1ST YEAR\ADS1\ADS1 assignment\M22\22.1 Ransom Note\Solution.java:2:8: Unused import - java.util.Arrays. [UnusedImports]
 Audit done.
-Checkstyle ends with 1 errors.
