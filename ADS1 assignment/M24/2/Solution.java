@@ -29,35 +29,39 @@ public class Solution {
             String[] inp = scan.nextLine().split(" ");
             switch (inp[0]) {
                 case "BE":
-                Double l = Double.parseDouble(inp[1]);
-                    while (l <= Double.parseDouble(inp[1])
-                        && l >= Double.parseDouble(inp[2]));
-                        if(record.ceil(l)!= null) {
+                    Double l = Double.parseDouble(inp[1]);
+                    Double a = Double.parseDouble(inp[1]);
+                    Double b = Double.parseDouble(inp[2]);
+                    while (l >= a && l <= b) {
+                        if(record.ceil(l)!= null && record.ceil(l) <= b) {
                             System.out.println(record.get(record.ceil(l)).getName());
                             l = record.ceil(l) + 0.01;
                         } else {
                             break;
                         }
+                    }
                     break;
                 case "LE":
                     Double j = Double.parseDouble(inp[1]);
-                    while (j <= Double.parseDouble(inp[1]))
+                    while (j <= Double.parseDouble(inp[1])) {
                         if (record.floor(j) != null) {
                             System.out.println(record.get(record.floor(j)).getName());
                             j = record.floor(j) - 0.01;
                         } else {
                             break;
                         }
+                    }
                     break;
                 case "GE":
                     Double k = Double.parseDouble(inp[1]);
-                    while (k >= Double.parseDouble(inp[1]))
+                    while (k >= Double.parseDouble(inp[1])) {
                         if (record.ceil(k) != null) {
                             System.out.println(record.get(record.ceil(k)).getName());
                             k = record.ceil(k) - 0.01;
                         } else {
                             break;
                         }
+                    }
                     break;
                 default:
                     break;
