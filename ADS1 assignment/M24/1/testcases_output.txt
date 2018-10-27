@@ -1,4 +1,4 @@
-########## Testcase 0: Failed ##########
+########## Testcase 0: Passed ##########
 Expected Output: 
 Clark
 Rivest
@@ -9,14 +9,14 @@ Alice
 Bob
 John
 Your Output: 
-76.7
-78.4
-65.4
-49.4
-98.3
-88.7
-100.7
-56.4
+Clark
+Rivest
+Abegg
+Fred
+Wayne
+Alice
+Bob
+John
 ----------------------------------------
 ########## Testcase 1: Passed ##########
 Expected Output: 
@@ -48,7 +48,7 @@ Your Output:
 45.4
 99.3
 ----------------------------------------
-########## Testcase 2: Failed ##########
+########## Testcase 2: Passed ##########
 Expected Output: 
 Knuth
 100.0
@@ -68,25 +68,25 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-100.1
+Knuth
 100.0
-76.4
+Clark
 78.2
-65.7
+Abegg
 85.6
-98.3
+Wayne
 88.3
-56.7
+John
 65.7
-11.2
+Hank
 13.3
-99.3
+Jeannette Caines
 Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 ----------------------------------------
-########## Testcase 3: Failed ##########
+########## Testcase 3: Passed ##########
 Expected Output: 
 7.213
 Michael Hale
@@ -590,23 +590,23 @@ John Hale
 53.79
 Your Output: 
 7.213
-74.62
+Michael Hale
 59.62
-63.57
+Bradley Jackson
 57.53
-11.58
+Madhur Jaffrey
 86.65
-40.95
+Ruth H. Jacobs
 90.69
 74.62
 62.17
-48.67
-84.78
-45.39
-66.2
-36.24
+Richard Jacoby
+Kady MacDonald Denton
+Kate Jacoby
+Charles B. Macdonald
+Laura Holmes Haddad
 36.4
-44.63
+Debra W. Haffner
 98.13
 17.86
 21.24
@@ -614,310 +614,310 @@ Your Output:
 50.75
 63.33
 35.14
-4.731
-20.62
-54.08
-50.88
+Kathryn Jacobi
+Brad Haddin
+Gerry Hadden
+Kathryn Ma
 30.97
-20.62
-59.67
-88.48
+T. T. Macan
+Simon Jacobson
+Carla Jablonski
 24.51
 99.46
 27.87
 84.78
-99.38
+Sammy Hagar
 87.26
 53.48
-62.17
-74.62
-62.17
+Taylor Hackford
+Michael Hale
+Taylor Hackford
 36.24
-75.18
+Katharina Hagena
 35.6
-53.79
-46.81
-90.74
+Gracie MacGregor
+David Halberstam
+Michael Haag
 51.43
-19.32
+Chuck Hagel
 87.16
-63.33
+Sophie Jaff
 62.17
 6.627
-75.18
+Katharina Hagena
 92.85
-14.88
+Colin Jack
 88.48
-3.336
-32.81
-62.03
-10.31
-97.83
+Margaret Peterson Haddix
+Bethany Hagen
+Aparna Jain
+Pamela Haag
+H3CZ
 18.28
-46.77
+Olivia Mace
 45.32
 68.0
 35.6
 79.87
-44.63
+Debra W. Haffner
 40.95
-52.12
-41.03
+Tracey Jackson
+Steve Hagen
 79.49
-87.0
-35.46
-62.74
-89.14
-85.27
-59.62
-17.5
+Yossi Klein Halevi
+Nafisa Haji
+David Haig
+Mary Downing Hahn
+Roger Lea MacBride
+Steph Jagger
+Ian Jackman
 17.2
 35.74
-40.06
+Guru Jagat
 4.893
 74.05
-18.28
+Carrington MacDuffie
 35.81
 66.2
 72.2
-87.26
+Tony Macaulay
 74.64
-28.69
+Cynthia Jabar
 24.84
-23.87
-74.62
+Carla Hall
+Michael Hale
 72.19
 54.45
 53.48
-69.29
-91.51
+David Jacobs
+John Hornor Jacobs
 17.5
 53.48
-86.65
-72.2
+Ann-Marie MacDonald
+Jane MacDougall
 71.85
-11.09
-35.71
+Amanda Hall
+Shaili Jain M.D.
 43.91
-17.2
-61.6
-21.24
-91.51
+Peter Jackson
+Dana C. Jack
+Catherine Macaulay
+John Hornor Jacobs
 86.65
-99.9
-46.81
-17.86
+Namita Jain
+David Halberstam
+Richard Jackson
 46.81
 45.39
-17.2
-17.54
-66.37
-28.71
-10.42
+Peter Jackson
+Kellie Hailes
+Andrew Macdonald
+Howard Jacobson
+Bernie Mac
 10.42
 11.09
 45.39
-35.74
-98.87
-54.45
-90.69
+Al Jaffee
+Tessa Hadley
+A.N.D Haksar
+Mary MacCracken
 35.81
-59.62
+Steph Jagger
 17.86
-63.57
-16.5
-99.9
-52.12
+Bradley Jackson
+Michele Jaffe
+Namita Jain
+Tracey Jackson
 87.26
 48.84
-46.77
-93.97
-42.81
+Olivia Mace
+Shane Jacobson
+Don Hagen
 17.5
 3.391
-3.391
+Thomas Hackett
 55.34
-31.38
-75.6
+Mick Jackson
+Sarah Jacoby
 11.58
 39.78
 14.77
 8.36
-35.46
-75.18
-35.81
-76.56
+Nafisa Haji
+Katharina Hagena
+Nasim Marie Jafry
+M MacCallum
 69.73
-26.33
-73.58
-66.37
+Betty MacDonald
+Jessie Haas
+Andrew Macdonald
 87.6
-89.61
+Robert Jackson
 35.74
 72.19
 48.67
-69.74
+Daniel Hahn
 1.603
-79.87
-76.56
+Kristin Halbrook
+M MacCallum
 59.63
 15.56
-4.893
-62.17
-44.63
+William Hague
+Taylor Hackford
+Debra W. Haffner
 35.74
-83.43
+Heather Hach
 7.213
-47.48
-93.95
+Kathleen Hale
+Terrence J
 45.39
-23.21
-72.14
+Andrew Jacobson
+Julie Mac
 3.876
-79.49
+Kinley MacGregor
 17.55
-99.9
+Namita Jain
 92.85
-83.43
-74.62
-61.6
+Heather Hach
+Michael Hale
+Dana C. Jack
 15.56
 24.84
 7.213
-90.69
+Mary MacCracken
 93.95
 99.9
-28.06
-59.67
+Kevin MacAllister
+Simon Jacobson
 8.108
-5.739
+Sheila Hale
 5.41
 65.06
-12.7
-66.37
+Sara MacDonald
+Andrew Macdonald
 87.26
-1.603
+John W. Jacobs M.D.
 52.12
-83.43
-87.16
+Heather Hach
+Gene Hackman
 76.93
-17.55
+Kennell Jackson
 40.1
-90.69
-23.87
+Mary MacCracken
+Carla Hall
 35.81
-63.33
+Sophie Jaff
 26.54
-76.01
-16.78
+Joie Jager-Hyman
+Emma Jackson
 17.2
-5.843
+Jeremy Jackson
 50.88
 43.91
-46.77
-36.4
+Olivia Mace
+David H. Hackworth
 96.83
-24.4
-40.95
-43.33
-26.54
-35.74
-76.56
-87.6
-18.28
+Rachel Jacobs
+Ruth H. Jacobs
+Dana Jacobi
+Bonnie MacBird
+Al Jaffee
+M MacCallum
+Lynn F. Jacobs
+Carrington MacDuffie
 82.63
-28.69
+Cynthia Jabar
 24.34
 48.77
 90.74
-30.75
+Marylin Hafner
 82.63
 84.43
 79.38
 72.19
 55.34
 17.5
-87.16
+Gene Hackman
 26.33
 53.79
-35.6
-87.74
+Marilyn Hagerty
+Araminta Hall
 71.85
-69.29
+David Jacobs
 79.58
 28.06
-92.85
-87.74
+Keach Hagey
+Araminta Hall
 87.16
 48.28
-35.6
-32.81
-12.7
+Marilyn Hagerty
+Bethany Hagen
+Sara MacDonald
 10.31
 83.43
 17.5
 79.09
 30.97
-47.48
-36.24
-73.58
+Kathleen Hale
+Laura Holmes Haddad
+Jessie Haas
 14.77
-62.74
+David Haig
 11.63
 63.57
 89.61
-98.13
+John Jacobs
 15.89
-87.16
+Gene Hackman
 36.24
 19.32
 79.38
-90.69
-60.37
+Mary MacCracken
+Nate Jackson
 74.62
-4.893
+William Hague
 76.56
 79.49
-65.06
+Ruby Jackson
 7.213
-30.1
+Saskia Maarleveld
 74.62
 45.39
-52.12
+Tracey Jackson
 42.81
 79.49
 28.71
-35.14
-81.72
+Auston Habershaw
+Bruce Hale
 36.24
 54.45
-40.1
-79.31
-28.69
-48.67
-66.37
-69.74
+Rawi Hage
+Jo Jackson King
+Cynthia Jabar
+Richard Jacoby
+Andrew Macdonald
+Daniel Hahn
 24.4
 91.38
 45.39
 7.065
 74.05
 54.82
-39.78
-87.0
+Vicky Hales-Dutton
+Yossi Klein Halevi
 36.24
-3.336
+Margaret Peterson Haddix
 19.32
 14.77
 62.17
 85.84
 75.0
 79.87
-53.48
-21.24
-11.63
-82.63
-91.38
+Ellen Jackson
+Catherine Macaulay
+Peter Haining
+Annie Maccoby
+David Macfarlane
 10.42
 88.39
 Student doesn't exists...
@@ -926,167 +926,167 @@ Student doesn't exists...
 35.74
 51.43
 48.77
-86.65
+Ann-Marie MacDonald
 87.6
-50.75
-24.02
+Ellie Macdonald
+Michael Hague
 11.58
-65.06
-62.74
+Ruby Jackson
+David Haig
 28.69
 53.48
 90.91
-48.84
+Jennifer Haigh
 43.06
 92.0
 92.0
-28.06
+Kevin MacAllister
 57.53
-75.18
+Katharina Hagena
 50.88
 15.89
-88.39
-88.48
+Margaret Read MacDonald
+Carla Jablonski
 61.6
-45.39
-60.27
-87.26
-30.1
-17.54
-41.03
-91.92
-7.213
-7.065
+Kate Jacoby
+Sylvie Haisman
+Tony Macaulay
+Saskia Maarleveld
+Kellie Hailes
+Steve Hagen
+H. JACKSON
+John Hale
+Korey Jackson
 3.336
-81.1
+Betty Halbreich
 35.6
-61.6
+Dana C. Jack
 Student doesn't exists...
-3.876
-8.108
+Elaine Hall
+Bonnie MacBird
 54.45
 61.6
-91.51
-4.893
-35.6
+John Hornor Jacobs
+William Hague
+Marilyn Hagerty
 59.62
-59.67
+Simon Jacobson
 98.87
-62.74
-84.43
+David Haig
+Myla Jackson
 46.81
-40.06
-4.058
+Guru Jagat
+June Hadley
 21.24
-69.73
+Jeannette Haien
 76.48
 63.33
 40.43
 85.69
-16.78
+Emma Jackson
 99.9
 35.74
-40.43
+Kathryn Miller Haines
 93.97
 79.38
-34.21
-79.38
+Adele Jacques
+Baby Halder
 48.67
 75.18
 35.71
-14.88
+Colin Jack
 28.06
-23.21
+Andrew Jacobson
 8.759
-23.87
+Carla Hall
 17.39
-88.48
+Carla Jablonski
 52.12
 60.27
-36.88
-48.67
-51.43
+Shelley Jackson
+Richard Jacoby
+Norm MacDonald
 6.364
 43.12
-46.81
+David Halberstam
 17.54
-10.3
+Nathan Hale
 11.63
-76.93
-84.78
-21.24
+James B. Maas
+Kady MacDonald Denton
+Catherine Macaulay
 75.0
-45.39
-59.63
+Kate Jacoby
+Roger O.M.D. Jahnke
 63.33
 59.67
-14.88
-91.38
-72.19
-79.09
+Colin Jack
+David Macfarlane
+James Macdonald
+Richard Mabey
 79.58
 16.78
-11.58
+Madhur Jaffrey
 32.81
 62.74
 17.39
-72.2
-8.108
+Jane MacDougall
+Bonnie MacBird
 14.77
-83.43
+Heather Hach
 98.87
-19.32
+Chuck Hagel
 90.69
 83.43
-78.56
-76.48
-90.91
+John W. Jacobs
+David Hagedorn
+Todd Haberkorn
 Student doesn't exists...
-5.41
-21.24
-79.49
+Mary Curran Hackett
+Catherine Macaulay
+Kinley MacGregor
 89.85
-69.74
-36.24
-73.72
+Daniel Hahn
+Laura Holmes Haddad
+Joshilyn Jackson
 79.87
 89.85
-50.88
+Kathryn Ma
 50.75
-7.213
+John Hale
 3.876
-54.45
+A.N.D Haksar
 16.5
 35.81
 48.67
-92.85
+Keach Hagey
 89.61
 32.99
 39.78
 80.31
-14.24
+Kristin Hahn
 53.48
-79.09
-8.36
-24.84
+Richard Mabey
+Derek Jacobi
+Jerome A. Jackson
 5.41
 32.99
 45.09
-46.81
-63.57
+David Halberstam
+Bradley Jackson
 23.87
 47.48
 50.88
-4.893
-69.74
-20.62
+William Hague
+Daniel Hahn
+T. T. Macan
 27.87
 91.92
-75.0
+Fiona MacDonald
 87.26
 91.92
-3.876
-89.47
-7.213
+Elaine Hall
+Robert Macfarlane
+John Hale
 53.79
 ----------------------------------------
