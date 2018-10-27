@@ -1,7 +1,7 @@
 /**
  * Class for student.
  */
-public class Student {
+public class Student implements Comparable<Student> {
     /**
      * Name of the student.
      */
@@ -42,7 +42,14 @@ public class Student {
     public Integer getRoll() {
         return this.roll;
     }
-//     public int compareTo(Student other) {
-//         return this.name.compareTo(other.name);
-//     }
+    /**
+     * CompareTo function.
+     *
+     * @param      other  The other
+     *
+     * @return     { description_of_the_return_value }
+     */
+    public int compareTo(Student other) {
+        return this.name.compareTo(other.name);
+    }
 }
