@@ -33,7 +33,7 @@ public class Solution {
                 System.out.println(l);
                     while (l >= Double.parseDouble(inp[1])
                         && l <= Double.parseDouble(inp[2]));
-                        if(record.ceil(l)!= null) {
+                        if(record.ceil(l)!= null && record.ceil(l) <=  Double.parseDouble(inp[2])) {
                             System.out.println(record.get(record.ceil(l)).getName());
                             l = record.ceil(l) + 0.01;
                         } else {
