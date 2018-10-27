@@ -21,7 +21,8 @@ public class Solution {
         BinaryST<Student, Double> record = new BinaryST();
         for (int i = 0; i < n; i++) {
             String[] inp = scan.nextLine().split(",");
-            record.put(new Student(inp[1], Integer.parseInt(inp[0])),
+            record.put(new Student(inp[1], Double.parseDouble(inp[2]),
+                Integer.parseInt(inp[0])),
                 Double.parseDouble(inp[2]));
         }
         int m = Integer.parseInt(scan.nextLine());

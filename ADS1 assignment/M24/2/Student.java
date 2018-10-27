@@ -10,6 +10,7 @@ public class Student implements Comparable<Student> {
      * Roll no of the student.
      */
     private Integer roll;
+    private Double marks;
     /**
      * Constructs the object.
      */
@@ -22,9 +23,10 @@ public class Student implements Comparable<Student> {
      * @param      student  The student
      * @param      num      The roll number.
      */
-    public Student(final String student, final Integer num) {
+    public Student(final String student, final Double mark, final Integer num) {
         this.name = student;
         this.roll = num;
+        this.marks = mark;
     }
     /**
      * Gets the name.
@@ -50,6 +52,6 @@ public class Student implements Comparable<Student> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(Student other) {
-        return this.roll.compareTo(other.roll);
+        return this.marks.compareTo(other.marks);
     }
 }
