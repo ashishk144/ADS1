@@ -42,4 +42,7 @@ public class Student {
     public Integer getRoll() {
         return this.roll;
     }
+//     public int compareTo(Student other) {
+//         return this.name.compareTo(other.name);
+//     }
 }
