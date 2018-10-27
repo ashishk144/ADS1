@@ -62,7 +62,7 @@ public class LinearProbingHashST<Key, Value> {
     private int hash(Key key) {
         // char c = (char) key;
         // int k = c;
-        return (11 * key.hashCode()) % m;
+        return (key.hashCode() & 0x7fffffff) % m;
     }
 
     // resizes the hash table to the given capacity by re-hashing all of the keys
