@@ -60,6 +60,10 @@ public class Student implements Comparable<Student> {
             return 1;
         } else if (this.name.compareTo(other.name) < 0) {
             return -1;
+        } else if (this.roll.compareTo(other.roll) > 0) {
+            return 1;
+        } else if (this.roll.compareTo(other.roll) < 0) {
+            return -1;
         } else {
             return 0;
         }
