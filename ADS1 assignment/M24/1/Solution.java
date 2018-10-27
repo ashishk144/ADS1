@@ -18,8 +18,8 @@ public class Solution {
     public static void main(final String[] args) {
         Scanner scan = new Scanner(System.in);
         int n = Integer.parseInt(scan.nextLine());
-        SeparateChainingHashST<Integer, Student> record
-            = new SeparateChainingHashST();
+        SeparateChainingHashST<Integer, Student> record =
+        new SeparateChainingHashST();
         for (int i = 0; i < n; i++) {
             String[] inp = scan.nextLine().split(",");
             record.put(Integer.parseInt(inp[0]),
