@@ -56,13 +56,13 @@ public class Student implements Comparable<Student> {
             return 1;
         } else if (this.marks < other.marks) {
             return -1;
-        } else if (this.name.compareTo(other.name) > 0) {
+        // } else if (this.name.compareTo(other.name) > 0) {
+        //     return 1;
+        // } else if (this.name.compareTo(other.name) < 0) {
+        //     return -1;
+        } else if (this.roll > other.roll) {
             return 1;
-        } else if (this.name.compareTo(other.name) < 0) {
-            return -1;
-        } else if (this.roll.compareTo(other.roll) > 0) {
-            return 1;
-        } else if (this.roll.compareTo(other.roll) < 0) {
+        } else if (this.roll < other.roll) {
             return -1;
         } else {
             return 0;
