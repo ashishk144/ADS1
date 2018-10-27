@@ -21,10 +21,10 @@ public class Solution {
                 new Student(inp[1], Double.parseDouble(inp[2])));
         }
         int m = Integer.parseInt(scan.nextLine());
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i < m; i++) {
             String[] inp = scan.nextLine().split(" ");
             int roll = Integer.parseInt(inp[1]);
-            if(record.contains(roll)) {
+            if (record.contains(roll)) {
                 Student s = record.get(roll);
                 if (Integer.parseInt(inp[1]) == 2) {
                     System.out.println(s.getName());
