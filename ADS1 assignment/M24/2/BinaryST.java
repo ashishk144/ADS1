@@ -130,7 +130,7 @@ public class BinaryST<Key extends Comparable<Key>, Value> extends Queue {
         } else if (cmp > 0) {
             x.right = put(x.right, key, val);
         } else {
-            return x;
+            x.val = val;
         }
         x.size = 1 + size(x.left) + size(x.right);
         return x;
