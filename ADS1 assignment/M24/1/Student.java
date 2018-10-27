@@ -20,7 +20,6 @@ public class Student {
      * Constructs the object.
      *
      * @param      student  The student
-     * @param      num      The number
      * @param      mark     The mark
      */
     public Student(final String student, final double mark) {
