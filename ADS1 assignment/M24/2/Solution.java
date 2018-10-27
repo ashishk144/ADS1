@@ -57,7 +57,7 @@ public class Solution {
                     while (k >= Double.parseDouble(inp[1])) {
                         if (record.ceil(k) != null) {
                             System.out.println(record.get(record.ceil(k)).getName());
-                            k = record.ceil(k) - 0.01;
+                            k = record.ceil(k) + 0.01;
                         } else {
                             break;
                         }
