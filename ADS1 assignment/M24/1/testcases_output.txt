@@ -9,8 +9,17 @@ Alice
 Bob
 John
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:26)
+76.7
+78.4
+65.4
+49.4
+98.3
+88.7
+100.7
+56.4
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 ########## Testcase 1: Failed ##########
 Expected Output: 
@@ -28,8 +37,22 @@ Expected Output:
 45.4
 99.3
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:26)
+100.1
+100.0
+76.4
+78.2
+65.7
+85.6
+98.3
+88.3
+56.7
+65.7
+11.2
+45.4
+99.3
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 ########## Testcase 2: Failed ##########
 Expected Output: 
@@ -51,8 +74,27 @@ Student doesn't exists...
 Student doesn't exists...
 Student doesn't exists...
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:26)
+100.1
+100.0
+76.4
+78.2
+65.7
+85.6
+98.3
+88.3
+56.7
+65.7
+11.2
+13.3
+99.3
+Student doesn't exists...
+Student doesn't exists...
+Student doesn't exists...
+Student doesn't exists...
+Student doesn't exists...
+Exception in thread "main" java.util.NoSuchElementException: No line found
+	at java.base/java.util.Scanner.nextLine(Unknown Source)
+	at Solution.main(Solution.java:25)
 ----------------------------------------
 ########## Testcase 3: Failed ##########
 Expected Output: 
@@ -557,6 +599,304 @@ Robert Macfarlane
 John Hale
 53.79
 Your Output: 
-Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: 1
-	at Solution.main(Solution.java:26)
+7.213
+74.62
+59.62
+63.57
+57.53
+11.58
+86.65
+40.95
+90.69
+74.62
+62.17
+48.67
+84.78
+45.39
+66.2
+36.24
+36.4
+44.63
+98.13
+17.86
+21.24
+76.56
+50.75
+63.33
+35.14
+4.731
+20.62
+54.08
+50.88
+30.97
+20.62
+59.67
+88.48
+24.51
+99.46
+27.87
+84.78
+99.38
+87.26
+53.48
+62.17
+74.62
+62.17
+36.24
+75.18
+35.6
+53.79
+46.81
+90.74
+51.43
+19.32
+87.16
+63.33
+62.17
+6.627
+75.18
+92.85
+14.88
+88.48
+3.336
+32.81
+62.03
+10.31
+97.83
+18.28
+46.77
+45.32
+68.0
+35.6
+79.87
+44.63
+40.95
+52.12
+41.03
+79.49
+87.0
+35.46
+62.74
+89.14
+85.27
+59.62
+17.5
+17.2
+35.74
+40.06
+4.893
+74.05
+18.28
+35.81
+66.2
+72.2
+87.26
+74.64
+28.69
+24.84
+23.87
+74.62
+72.19
+54.45
+53.48
+69.29
+91.51
+17.5
+53.48
+86.65
+72.2
+71.85
+11.09
+35.71
+43.91
+17.2
+61.6
+21.24
+91.51
+86.65
+99.9
+46.81
+17.86
+46.81
+45.39
+17.2
+17.54
+66.37
+28.71
+10.42
+10.42
+11.09
+45.39
+35.74
+98.87
+54.45
+90.69
+35.81
+59.62
+17.86
+63.57
+16.5
+99.9
+52.12
+87.26
+48.84
+46.77
+93.97
+42.81
+17.5
+3.391
+3.391
+55.34
+31.38
+75.6
+11.58
+39.78
+14.77
+8.36
+35.46
+75.18
+35.81
+76.56
+69.73
+26.33
+73.58
+66.37
+87.6
+89.61
+35.74
+72.19
+48.67
+69.74
+1.603
+79.87
+76.56
+59.63
+15.56
+4.893
+62.17
+44.63
+35.74
+83.43
+7.213
+47.48
+93.95
+45.39
+23.21
+72.14
+3.876
+79.49
+17.55
+99.9
+92.85
+83.43
+74.62
+61.6
+15.56
+24.84
+7.213
+90.69
+93.95
+99.9
+28.06
+59.67
+8.108
+5.739
+5.41
+65.06
+12.7
+66.37
+87.26
+1.603
+52.12
+83.43
+87.16
+76.93
+17.55
+40.1
+90.69
+23.87
+35.81
+63.33
+26.54
+76.01
+16.78
+17.2
+5.843
+50.88
+43.91
+46.77
+36.4
+96.83
+24.4
+40.95
+43.33
+26.54
+35.74
+76.56
+87.6
+18.28
+82.63
+28.69
+24.34
+48.77
+90.74
+30.75
+82.63
+84.43
+79.38
+72.19
+55.34
+17.5
+87.16
+26.33
+53.79
+35.6
+87.74
+71.85
+69.29
+79.58
+28.06
+92.85
+87.74
+87.16
+48.28
+35.6
+32.81
+12.7
+10.31
+83.43
+17.5
+79.09
+30.97
+47.48
+36.24
+73.58
+14.77
+62.74
+11.63
+63.57
+89.61
+98.13
+15.89
+87.16
+36.24
+19.32
+79.38
+90.69
+60.37
+74.62
+4.893
+76.56
+79.49
+65.06
+7.213
+30.1
+74.62
+45.39
+52.12
+42.81
+79.49
+28.71
+35.14
+81.72
 ----------------------------------------

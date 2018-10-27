@@ -22,7 +22,7 @@ public class Solution {
         }
         int m = Integer.parseInt(scan.nextLine());
         for (int i = 0; i < n; i++) {
-            String[] inp = scan.nextLine().split(",");
+            String[] inp = scan.nextLine().split(" ");
             int roll = Integer.parseInt(inp[1]);
             if(record.contains(roll)) {
                 Student s = record.get(roll);
