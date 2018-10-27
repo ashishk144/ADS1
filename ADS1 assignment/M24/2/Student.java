@@ -50,6 +50,6 @@ public class Student implements Comparable<Student> {
      * @return     { description_of_the_return_value }
      */
     public int compareTo(Student other) {
-        return this.name.compareTo(other.name);
+        return this.roll.compareTo(other.roll);
     }
 }
