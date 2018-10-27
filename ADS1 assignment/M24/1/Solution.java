@@ -26,7 +26,7 @@ public class Solution {
             int roll = Integer.parseInt(inp[1]);
             if (record.contains(roll)) {
                 Student s = record.get(roll);
-                if (Integer.parseInt(inp[1]) == 2) {
+                if (Integer.parseInt(inp[1]) == 1) {
                     System.out.println(s.getName());
                 } else {
                     System.out.println(s.getMark());
